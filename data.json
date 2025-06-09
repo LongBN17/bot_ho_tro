@@ -1,103 +1,69 @@
 [
   {
-    "type": "issue",
-    "version": "4.0",
-    "module": "Đơn hàng",
-    "issue": "Khi chỉnh sửa đơn hàng thì báo Bạn phải trả hàng trước khi thay đổi thông tin",
-    "cause": "Do xuất thừa sản phẩm trong đơn hàng",
-    "solution": "Trả bớt hàng sẽ sửa được đơn hàng"
+    "Loại": "Issue",
+    "Tên": "Khi chỉnh sửa đơn hàng thì báo Bạn phải trả hàng trước khi thay đổi thông tin",
+    "Module": "Đơn hàng",
+    "Mô Tả": "Do xuất thừa sản phẩm trong đơn hàng",
+    "Giải Pháp": "Trả bớt hàng sẽ sửa được đơn hàng",
+    "Version": "4.0"
   },
   {
-    "type": "issue",
-    "version": "4.0",
-    "module": "Đơn hàng - Vận chuyển",
-    "issue": "ViettelPost không tự link địa chỉ khi tạo vận đơn",
-    "cause": "Do thông tin địa chỉ bên mình không khớp với bên ViettelPost",
-    "solution": "Khách hàng tự điền"
+    "Loại": "Issue",
+    "Tên": "ViettelPost không tự link địa chỉ khi tạo vận đơn",
+    "Module": "Đơn hàng - Vận chuyển",
+    "Mô Tả": "Do thông tin địa chỉ bên mình không khớp với bên ViettelPost",
+    "Giải Pháp": "Khách hàng tự điền",
+    "Version": "4.0"
   },
   {
-    "type": "issue",
-    "version": "4.0",
-    "module": "Email Marketing",
-    "issue": "Kết nối Mail PA không nhận được mail cấu hình",
-    "cause": "Thông tin kết nối sai, phải có ssl:// ở đằng trước địa chỉ SMTP",
-    "solution": "Bổ sung đúng thông tin"
+    "Loại": "Issue",
+    "Tên": "Kết nối Mail PA không nhận được mail cấu hình",
+    "Module": "Email Marketing",
+    "Mô Tả": "Thông tin kết nối sai, phải có ssl:// ở đằng trước địa chỉ SMTP",
+    "Giải Pháp": "Bổ sung đúng thông tin",
+    "Version": "4.0"
   },
   {
-    "type": "issue",
-    "version": "4.0",
-    "module": "Báo cáo",
-    "issue": "Sai thông tin báo cáo",
-    "cause": "Phòng ban mặc định đang chọn là Phòng kinh doanh, dữ liệu load chậm đè lên dữ liệu đã chọn",
-    "solution": "Đợi các cột load xong thông tin"
+    "Loại": "Issue",
+    "Tên": "Sai thông tin báo cáo",
+    "Module": "Báo cáo",
+    "Mô Tả": "Phòng ban mặc định đang chọn là Phòng kinh doanh, dữ liệu load chậm đè lên dữ liệu đã chọn",
+    "Giải Pháp": "Đợi các cột load xong thông tin",
+    "Version": "4.0"
   },
   {
-    "type": "note",
-    "title": "reminder",
-    "content": "Upload file nếu bị lỗi giới hạn thì hỏi anh Duy. Upload file nếu bị lỗi định danh thì hỏi anh Sang"
+    "Loại": "Note",
+    "Module": "Đơn hàng",
+    "Mô Tả": "Upload file nếu bị lỗi giới hạn thì hỏi anh Duy. Upload file nếu bị lỗi định danh thì hỏi anh Sang"
   },
   {
-    "type": "note",
-    "title": "kpi_note",
-    "content": "Khi KPI tốt theo chiều hướng giảm thì chỉ cần thực tế chưa bằng chỉ tiêu, hệ thống sẽ gán mức KPI cao nhất (vd: 150%)"
+    "Loại": "Note",
+    "Module": "KPI",
+    "Mô Tả": "Khi KPI tốt theo chiều hướng giảm thì chỉ cần thực tế chưa bằng chỉ tiêu, hệ thống sẽ gán mức KPI cao nhất (vd: 150%)"
   },
   {
-    "type": "note",
-    "title": "log_display",
-    "content": "Logs từ tổng đài Mộc Media hiển thị thế nào là do dữ liệu từ tổng đài đẩy sang"
+    "Loại": "Note",
+    "Module": "Tổng đài",
+    "Mô Tả": "Logs từ tổng đài Mộc Media hiển thị thế nào là do dữ liệu từ tổng đài đẩy sang"
   },
   {
-    "type": "note",
-    "title": "kpi_app",
-    "content": "Hiện trên app chỉ có KPI v3"
+    "Loại": "Note",
+    "Module": "KPI",
+    "Mô Tả": "Hiện trên app chỉ có KPI v3 và tên khác là G-version"
   },
   {
-    "type": "note",
-    "title": "alias",
-    "content": "KPI v3 còn có tên gọi khác là G-version"
+    "Loại": "Note",
+    "Module": "Tổng đài",
+    "Mô Tả": "Tổng đài kết nối bằng API thì không reset logs được, cần báo khách xoá logs cũ và báo tổng đài đẩy lại"
   },
   {
-    "type": "logic",
-    "title": "user_deletion_logic",
-    "details": {
-      "opportunity_detail": "Không hiển thị do người dùng đã xoá, tự động về không ai phụ trách",
-      "campaign_and_list": "Vẫn hiển thị tên người phụ trách cũ để người dùng biết"
-    }
+    "Loại": "Logic",
+    "Module": "Tổng đài",
+    "Mô Tả": "Description: Tổng đài chỉ hỗ trợ dùng trên 1 tab (CRM hoặc Fastcall); Issues: Ấn nghe không được, mất nút nghe; Ngắt máy không đóng popup, dù đã thiết lập tự động"
   },
   {
-    "type": "note",
-    "title": "log_reset",
-    "content": "Tổng đài kết nối bằng API thì không reset logs được, cần báo khách xoá logs cũ và báo tổng đài đẩy lại"
-  },
-  {
-    "type": "logic",
-    "title": "call_tab_limit",
-    "details": {
-      "description": "Tổng đài chỉ hỗ trợ dùng trên 1 tab (CRM hoặc Fastcall)",
-      "issues": [
-        "Ấn nghe không được, mất nút nghe",
-        "Ngắt máy không đóng popup, dù đã thiết lập tự động"
-      ]
-    }
-  },
-  {
-    "type": "logic",
-    "title": "server_info",
-    "details": {
-      "url": "http://crm.jwhospital.vn/",
-      "type": "server riêng"
-    }
-  },
-  {
-    "type": "list_note",
-    "title": "order_upload",
-    "items": [
-      "Muốn upload ghi đè đơn hàng cần có quyền chỉnh sửa, nếu không sẽ bị bỏ qua",
-      "Đơn hàng đang xuất kho hoặc đã hoàn thành thì upload ghi đè sẽ bỏ qua (V4)",
-      "Người thực hiện đơn hàng là người được chọn trong lúc tạo đơn hàng",
-      {
-        "logic_update": "Upload ghi đè sẽ thay thế dòng sản phẩm mới và xoá dòng cũ => Không check được số lượng đã xuất + không trả hàng được"
-      }
-    ]
+    "Loại": "Logic",
+    "Module": "Danh sách Server riêng",
+    "Mô Tả": "http://crm.jwhospital.vn/;"
   }
 ]
