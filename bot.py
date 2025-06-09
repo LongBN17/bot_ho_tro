@@ -41,7 +41,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 # Khởi tạo bot
 if __name__ == '__main__':
-    TOKEN = "8186170651:AAFuvO2Tth5510cZK6H1GhhyXQrAr9bVsoA"
+    TOKEN = os.environ.get("BOT_TOKEN")
     app = ApplicationBuilder().token(TOKEN).build()
 
     app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
