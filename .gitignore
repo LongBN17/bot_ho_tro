@@ -32,5 +32,3 @@ ehthumbs.db
 *.secret
 *.token
 
-# Data file (if sensitive or large)
-data.json
