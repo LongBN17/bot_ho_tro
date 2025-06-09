@@ -1,0 +1,77 @@
+[
+  {
+    "version": "4.0",
+    "module": "Đơn hàng",
+    "issue": "Khi chỉnh sửa đơn hàng thì báo Bạn phải trả hàng trước khi thay đổi thông tin",
+    "cause": "Do xuất thừa sản phẩm trong đơn hàng",
+    "solution": "Trả bớt hàng sẽ sửa được đơn hàng"
+  },
+  {
+    "version": "4.0",
+    "module": "Đơn hàng - Vận chuyển",
+    "issue": "ViettelPost không tự link địa chỉ khi tạo vận đơn",
+    "cause": "Do thông tin địa chỉ bên mình không khớp với bên ViettelPost",
+    "solution": "Khách hàng tự điền"
+  },
+  {
+    "version": "4.0",
+    "module": "Email Marketing",
+    "issue": "Kết nối Mail PA không nhận được mail cấu hình",
+    "cause": "Thông tin kết nối sai, phải có ssl:// ở đằng trước địa chỉ SMTP",
+    "solution": "Bổ sung đúng thông tin"
+  },
+  {
+    "version": "4.0",
+    "module": "Báo cáo",
+    "issue": "Sai thông tin báo cáo",
+    "cause": "Phòng ban mặc định đang chọn là Phòng kinh doanh, dữ liệu load chậm đè lên dữ liệu đã chọn",
+    "solution": "Đợi các cột load xong thông tin"
+  },
+  {
+    "reminder": "Upload file nếu bị lỗi giới hạn thì hỏi anh Duy. Upload file nếu bị lỗi định danh thì hỏi anh Sang"
+  },
+  {
+    "kpi_note": "Khi KPI tốt theo chiều hướng giảm thì chỉ cần thực tế chưa bằng chỉ tiêu, hệ thống sẽ gán mức KPI cao nhất (vd: 150%)"
+  },
+  {
+    "log_display": "Logs từ tổng đài Mộc Media hiển thị thế nào là do dữ liệu từ tổng đài đẩy sang"
+  },
+  {
+    "kpi_app": "Hiện trên app chỉ có KPI v3",
+    "alias": "KPI v3 còn có tên gọi khác là G-version"
+  },
+  {
+    "user_deletion_logic": {
+      "opportunity_detail": "Không hiển thị do người dùng đã xoá, tự động về không ai phụ trách",
+      "campaign_and_list": "Vẫn hiển thị tên người phụ trách cũ để người dùng biết"
+    }
+  },
+  {
+    "log_reset": "Tổng đài kết nối bằng API thì không reset logs được, cần báo khách xoá logs cũ và báo tổng đài đẩy lại"
+  },
+  {
+    "call_tab_limit": {
+      "description": "Tổng đài chỉ hỗ trợ dùng trên 1 tab (CRM hoặc Fastcall)",
+      "issues": [
+        "Ấn nghe không được, mất nút nghe",
+        "Ngắt máy không đóng popup, dù đã thiết lập tự động"
+      ]
+    }
+  },
+  {
+    "server_info": {
+      "url": "http://crm.jwhospital.vn/",
+      "type": "server riêng"
+    }
+  },
+  {
+    "order_upload": [
+      "Muốn upload ghi đè đơn hàng cần có quyền chỉnh sửa, nếu không sẽ bị bỏ qua",
+      "Đơn hàng đang xuất kho hoặc đã hoàn thành thì upload ghi đè sẽ bỏ qua (V4)",
+      "Người thực hiện đơn hàng là người được chọn trong lúc tạo đơn hàng",
+      {
+        "logic_update": "Upload ghi đè sẽ thay thế dòng sản phẩm mới và xoá dòng cũ => Không check được số lượng đã xuất + không trả hàng được"
+      }
+    ]
+  }
+]
