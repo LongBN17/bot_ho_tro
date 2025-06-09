@@ -1,5 +1,5 @@
 from telegram import Update
-from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, ContextTypes
+from telegram.ext import ApplicationBuilder, MessageHandler, filters, ContextTypes
 import json
 import os
 from dotenv import load_dotenv
@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 # Load .env nếu có
 load_dotenv()
 
-# Load data
+# Load data từ file đã chuẩn hóa
 with open("data.json", "r", encoding="utf-8") as f:
     data = json.load(f)
 
@@ -15,18 +15,15 @@ with open("data.json", "r", encoding="utf-8") as f:
 def search_data(query):
     query = query.lower()
     results = []
-
     for item in data:
-        # Chuyển item sang chuỗi JSON và tìm query trong đó
         if query in json.dumps(item, ensure_ascii=False).lower():
             results.append(item)
-
     return results
 
 # Xử lý tin nhắn từ user
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if update.message is None or update.message.text is None:
-        return  # tránh lỗi nếu message rỗng
+        return
 
     query = update.message.text
     results = search_data(query)
@@ -34,21 +31,39 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if results:
         response = ""
         for item in results:
-            for k, v in item.items():
-                if isinstance(v, dict):
-                    for sub_k, sub_v in v.items():
-                        response += f"{sub_k}: {sub_v}\n"
-                elif isinstance(v, list):
-                    response += f"{k}:\n"
-                    for x in v:
-                        if isinstance(x, str):
-                            response += f"- {x}\n"
-                        else:
-                            response += f"- {json.dumps(x, ensure_ascii=False)}\n"
-                else:
-                    response += f"{k}: {v}\n"
+            type_ = item.get("type")
+
+            if type_ == "issue":
+                response += (
+                    f"[{item.get('version')}] {item.get('module')}\n"
+                    f"Issue: {item.get('issue')}\n"
+                    f"Nguyên nhân: {item.get('cause')}\n"
+                    f"Giải pháp: {item.get('solution')}\n"
+                )
+
+            elif type_ == "note":
+                response += f"{item.get('title')}: {item.get('content')}\n"
+
+            elif type_ == "logic":
+                response += f"{item.get('title')}:\n"
+                for k, v in item.get("details", {}).items():
+                    response += f" - {k}: {v}\n"
+
+            elif type_ == "list_note":
+                response += f"{item.get('title')}:\n"
+                for v in item.get("items", []):
+                    if isinstance(v, str):
+                        response += f" - {v}\n"
+                    elif isinstance(v, dict):
+                        for sub_k, sub_v in v.items():
+                            response += f" - {sub_k}: {sub_v}\n"
+
+            else:
+                response += f"(Không rõ định dạng): {json.dumps(item, ensure_ascii=False)}\n"
+
             response += "\n---\n"
-        await update.message.reply_text(response[:4000])  # Giới hạn 4000 ký tự
+
+        await update.message.reply_text(response[:4000])
     else:
         await update.message.reply_text("❌ Không tìm thấy kết quả phù hợp.")
 
