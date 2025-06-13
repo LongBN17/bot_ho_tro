@@ -65,5 +65,34 @@
     "Loại": "Logic",
     "Module": "Danh sách Server riêng",
     "Mô Tả": "https://adg.getflycrm.com; https://korea.getflycrm.com; https://vienthammykorea.getflycrm.com; https://fast14.getflycrm.com; https://cngvietnam.getflycrm.com; https://crm.jwhospital.vn; https://daivietsaigonedu.getflycrm.com; https://jw.getflycrm.com; https://honeycomb; https://getfly.upstation.vn; https://getfly.minhtrithanh.vn; https://crm.bvnaman.com/"
+  },
+  {
+    "Loại": "Logic",
+    "Module": "Khách hàng",
+    "Mô Tả": "Tính năng thay đổi người phụ trách ở màn hình F2",
+    "Giải Pháp": "",
+    "Version": ""
+  },
+  {
+    "Loại": "Note",
+    "Module": "[Quy định]",
+    "Mô Tả": "HT = Hệ thống\nCSKH = Lỗi do CSKH k check\nTester = Lỗi do tester\nDev = Lỗi do dev\nTTKH = Lỗi do thao tác khách hàng\nĐối tác = Lỗi do đối tác\nServer = Lỗi sever\nLogic = CV hỏi logic",
+    "Giải Pháp": "",
+    "Version": ""
+  },
+  {
+    "Loại": "Note",
+    "Module": "[Quy định] Công việc tính năng mới",
+    "Mô Tả": "1. Nhận tính năng tới đâu làm tới đó.\n2. Sau khi hoàn thành 1 tính năng thì mới nhận tính năng tiếp theo.\n3. Về báo lỗi:\n- Ghi lỗi rõ ràng, nhiều hơn 3 lỗi tạo 1 issue mới, gắn link vào issue dev làm.\n- Note lỗi rõ ràng theo quy định.\n- Nếu như app và pc cùng 1 issue: tạo báo lỗi riêng từng issue, ghi tên tiêu đề [App]/[PC].\n4. Nhắc nhở dev xử lý sớm công việc, không để dev kéo quá dài làm ảnh hưởng bản cập nhật.\n5. Nếu như bản PC không còn tính năng chờ thì chuyển qua bản App.\n6. Chú ý tag quan trọng và phản hồi công việc tính năng mới.",
+    "Giải Pháp": "",
+    "Version": ""
+  },
+  {
+    "Loại": "Issue",
+    "Tên": "[Tổng đài] Không gọi ra/gọi vào được",
+    "Module": "Tổng đài",
+    "Mô Tả": "Không gọi ra/ gọi vào được",
+    "Giải Pháp": "1. Xác định tổng đài gọi trực tiếp/gián tiếp: https://docs.google.com/spreadsheets/d/1u-VEYc4NM2IZcHULjoVRG-orC_r9FjM85SvXLAwVHfE/edit?gid=0#gid=0\n2. Nếu là trực tiếp: có báo đăng ký máy nhánh thành công. Nếu là gián tiếp: không có.\n3. Kiểm tra tai, mic của máy/\n4. Kiểm tra quyền gọi trên Getfly, kiểm tra quyền gọi/gọi vào trên tổng đài.\n5. Bật f12 kiểm tra thông tin:\na. Gọi trực tiếp:\n- Kiểm tra bên tab ws, tìm API tổng đài, và xem thông tin trả về khi thực hiện cuộc gọi.\n- Nếu có báo lỗi -> báo lại bên tổng đài.\nb. Gọi gián tiếp:\n- Kiểm tra thông tin  bên tab network, tìm api call",
+    "Version": "V5 + V6"
   }
 ]

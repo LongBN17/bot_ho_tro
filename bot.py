@@ -6,15 +6,22 @@ from telegram.ext import (
 import json
 import os
 from dotenv import load_dotenv
+import logging
 
-# Constants for conversation steps
-LOAI, TEN, MODULE, MO_TA, GIAI_PHAP, VERSION = range(6)
+# --- Logging setup ---
+logging.basicConfig(
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+    level=logging.INFO
+)
 
-# Load environment variables
+# --- Constants ---
+LOAI, VERSION, TEN, MODULE, MO_TA, GIAI_PHAP = range(6)
+
+# --- Load environment ---
 load_dotenv()
 TOKEN = os.getenv("BOT_TOKEN")
 
-# Load data from JSON
+# --- Load & Save data ---
 def load_data():
     try:
         with open("data.json", "r", encoding="utf-8") as f:
@@ -22,18 +29,15 @@ def load_data():
     except FileNotFoundError:
         return []
 
-# Save data to JSON
 def save_data(data):
     with open("data.json", "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
-# Main search function
 def search_data(query):
     query = query.lower()
     return [item for item in load_data() if query in json.dumps(item, ensure_ascii=False).lower()]
 
-# --- ADD FUNCTIONALITY ---
-
+# --- Add data conversation ---
 async def start_add(update: Update, context: ContextTypes.DEFAULT_TYPE):
     reply_markup = ReplyKeyboardMarkup([["Issue", "Note", "Logic"]], one_time_keyboard=True)
     await update.message.reply_text("📌 Chọn loại dữ liệu muốn thêm:", reply_markup=reply_markup)
@@ -42,41 +46,43 @@ async def start_add(update: Update, context: ContextTypes.DEFAULT_TYPE):
 async def get_loai(update: Update, context: ContextTypes.DEFAULT_TYPE):
     loai = update.message.text.strip()
     context.user_data["new_entry"] = {"Loại": loai}
+
     if loai == "Issue":
-        await update.message.reply_text("🔹 Nhập tên issue:")
-        return TEN
+        await update.message.reply_text("🔹 Nhập Version:")
+        return VERSION
     else:
-        await update.message.reply_text("🔹 Nhập module:")
+        context.user_data["new_entry"]["Version"] = ""
+        context.user_data["new_entry"]["Giải Pháp"] = ""
+        await update.message.reply_text("🔹 Nhập Module:")
         return MODULE
+
+async def get_version(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    context.user_data["new_entry"]["Version"] = update.message.text.strip()
+    await update.message.reply_text("🔹 Nhập Tên Issue:")
+    return TEN
 
 async def get_ten(update: Update, context: ContextTypes.DEFAULT_TYPE):
     context.user_data["new_entry"]["Tên"] = update.message.text.strip()
-    await update.message.reply_text("🔹 Nhập module:")
+    await update.message.reply_text("🔹 Nhập Module:")
     return MODULE
 
 async def get_module(update: Update, context: ContextTypes.DEFAULT_TYPE):
     context.user_data["new_entry"]["Module"] = update.message.text.strip()
-    await update.message.reply_text("🔹 Nhập mô tả:")
+    await update.message.reply_text("🔹 Nhập Mô tả/Nguyên nhân:")
     return MO_TA
 
 async def get_mo_ta(update: Update, context: ContextTypes.DEFAULT_TYPE):
     context.user_data["new_entry"]["Mô Tả"] = update.message.text.strip()
+
     if context.user_data["new_entry"]["Loại"] == "Issue":
-        await update.message.reply_text("🔹 Nhập giải pháp:")
+        await update.message.reply_text("🔹 Nhập Giải pháp/Hướng xử lý:")
         return GIAI_PHAP
     else:
-        context.user_data["new_entry"]["Giải Pháp"] = ""
-        context.user_data["new_entry"]["Version"] = ""
         await save_entry(update, context)
         return ConversationHandler.END
 
 async def get_giai_phap(update: Update, context: ContextTypes.DEFAULT_TYPE):
     context.user_data["new_entry"]["Giải Pháp"] = update.message.text.strip()
-    await update.message.reply_text("🔹 Nhập version:")
-    return VERSION
-
-async def get_version(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    context.user_data["new_entry"]["Version"] = update.message.text.strip()
     await save_entry(update, context)
     return ConversationHandler.END
 
@@ -87,8 +93,7 @@ async def save_entry(update: Update, context: ContextTypes.DEFAULT_TYPE):
     save_data(data)
     await update.message.reply_text("✅ Đã lưu dữ liệu mới!")
 
-# --- SEARCH FUNCTIONALITY ---
-
+# --- Handle message for searching ---
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if update.message is None or update.message.text is None:
         return
@@ -146,8 +151,13 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         if buffer.strip():
             await update.message.reply_text(buffer.strip())
 
-# --- MAIN ---
+# --- Error handler ---
+async def error_handler(update: object, context: ContextTypes.DEFAULT_TYPE) -> None:
+    logging.error("Exception while handling an update:", exc_info=context.error)
+    if isinstance(update, Update) and update.message:
+        await update.message.reply_text("❌ Có lỗi xảy ra. Vui lòng thử lại sau.")
 
+# --- Main entry point ---
 if __name__ == '__main__':
     if not TOKEN:
         print("❌ ERROR: BOT_TOKEN chưa được thiết lập trong biến môi trường!")
@@ -155,21 +165,23 @@ if __name__ == '__main__':
 
     app = ApplicationBuilder().token(TOKEN).build()
 
+    # Conversation handler for adding data
     add_conv = ConversationHandler(
         entry_points=[CommandHandler("add", start_add)],
         states={
             LOAI: [MessageHandler(filters.TEXT & ~filters.COMMAND, get_loai)],
+            VERSION: [MessageHandler(filters.TEXT & ~filters.COMMAND, get_version)],
             TEN: [MessageHandler(filters.TEXT & ~filters.COMMAND, get_ten)],
             MODULE: [MessageHandler(filters.TEXT & ~filters.COMMAND, get_module)],
             MO_TA: [MessageHandler(filters.TEXT & ~filters.COMMAND, get_mo_ta)],
             GIAI_PHAP: [MessageHandler(filters.TEXT & ~filters.COMMAND, get_giai_phap)],
-            VERSION: [MessageHandler(filters.TEXT & ~filters.COMMAND, get_version)],
         },
         fallbacks=[],
     )
 
     app.add_handler(add_conv)
     app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
+    app.add_error_handler(error_handler)
 
     print("🤖 Bot is running...")
     app.run_polling()
