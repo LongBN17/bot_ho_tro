@@ -34,8 +34,14 @@ def save_data(data):
         json.dump(data, f, ensure_ascii=False, indent=2)
 
 def search_data(query):
-    query = query.lower()
-    return [item for item in load_data() if query in json.dumps(item, ensure_ascii=False).lower()]
+    query = query.strip().lower()
+    data = load_data()
+
+    if query.isdigit():
+        id_number = int(query)
+        return [item for item in data if item.get("ID") == id_number]
+
+    return [item for item in data if query in json.dumps(item, ensure_ascii=False).lower()]
 
 # --- Command: /add ---
 async def start_add(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -113,9 +119,11 @@ async def get_giai_phap(update: Update, context: ContextTypes.DEFAULT_TYPE):
 async def save_entry(update: Update, context: ContextTypes.DEFAULT_TYPE):
     entry = context.user_data["new_entry"]
     data = load_data()
+    max_id = max([item.get("ID", 0) for item in data], default=0)
+    entry["ID"] = max_id + 1
     data.append(entry)
     save_data(data)
-    await update.message.reply_text("✅ Đã lưu dữ liệu mới!")
+    await update.message.reply_text(f"✅ Đã lưu dữ liệu mới! (🆔 ID: {entry['ID']})")
 
 # --- Command: /cancel hoặc "Huỷ" ---
 async def cancel(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -144,29 +152,33 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         version = item.get("Version", "")
         ten = item.get("Tên", "")
         giai_phap = item.get("Giải Pháp", "")
+        id_ = item.get("ID", "")
 
         if loai == "Issue":
             part = (
                 f"[{version}] {module}\n"
                 f"❗ Issue: {ten}\n"
                 f"📌 Nguyên nhân: {mo_ta}\n"
-                f"✅ Giải pháp: {giai_phap}"
+                f"✅ Giải pháp: {giai_phap}\n"
+                f"🆔 ID: {id_}"
             )
-            response_parts.append(part)
         elif loai == "Note":
-            part = f"📝 {module}:\n{mo_ta}"
-            response_parts.append(part)
+            part = f"📝 {module}:\n{mo_ta}\n🆔 ID: {id_}"
         elif loai == "Logic":
             part = f"⚙️ {module}:\n"
             for line in mo_ta.split(";"):
                 line = line.strip()
                 if line:
                     part += f" - {line}\n"
-            response_parts.append(part.strip())
+            part = part.strip() + f"\n🆔 ID: {id_}"
+        else:
+            part = json.dumps(item, ensure_ascii=False, indent=2)
+
+        response_parts.append(part)
 
     full_response = "\n\n---\n\n".join(response_parts)
-
     max_len = 4000
+
     if len(full_response) <= max_len:
         await update.message.reply_text(full_response)
     else:
