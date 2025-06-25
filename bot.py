@@ -5,6 +5,7 @@ from telegram.ext import (
 )
 import json
 import os
+import re
 from dotenv import load_dotenv
 import logging
 
@@ -16,6 +17,7 @@ logging.basicConfig(
 
 # --- Constants ---
 LOAI, VERSION, TEN, MODULE, MO_TA, GIAI_PHAP = range(6)
+EDIT_ID = range(1)
 
 # --- Load environment ---
 load_dotenv()
@@ -37,10 +39,18 @@ def search_data(query):
     query = query.strip().lower()
     data = load_data()
 
+    # Tìm theo ID nếu có định dạng id: 149, id=149, id 149
+    match = re.search(r"id[:=\s]*([0-9]+)", query)
+    if match:
+        id_number = int(match.group(1))
+        return [item for item in data if item.get("ID") == id_number]
+
+    # Nếu chỉ là số thì cũng coi là ID
     if query.isdigit():
         id_number = int(query)
         return [item for item in data if item.get("ID") == id_number]
 
+    # Tìm theo nội dung khác
     return [item for item in data if query in json.dumps(item, ensure_ascii=False).lower()]
 
 # --- Command: /add ---
@@ -125,6 +135,59 @@ async def save_entry(update: Update, context: ContextTypes.DEFAULT_TYPE):
     save_data(data)
     await update.message.reply_text(f"✅ Đã lưu dữ liệu mới! (🆔 ID: {entry['ID']})")
 
+# --- Command: /edit ---
+async def start_edit(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    await update.message.reply_text("✏️ Nhập ID của bản ghi bạn muốn chỉnh sửa:")
+    return EDIT_ID
+
+async def edit_entry(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    text = update.message.text.strip()
+    if not text.isdigit():
+        await update.message.reply_text("❌ ID không hợp lệ. Vui lòng nhập số.")
+        return EDIT_ID
+
+    data = load_data()
+    entry_id = int(text)
+    entry = next((item for item in data if item.get("ID") == entry_id), None)
+
+    if not entry:
+        await update.message.reply_text(f"❌ Không tìm thấy bản ghi với ID {entry_id}.")
+        return ConversationHandler.END
+
+    context.user_data["edit_entry"] = entry
+    context.user_data["data"] = data
+
+    reply_markup = ReplyKeyboardMarkup([
+        ["Loại", "Tên", "Module"],
+        ["Mô Tả", "Version", "Giải Pháp"],
+        ["Huỷ"]
+    ], one_time_keyboard=True, resize_keyboard=True)
+    await update.message.reply_text("📋 Chọn trường bạn muốn chỉnh sửa:", reply_markup=reply_markup)
+    return "CHOOSE_FIELD"
+
+async def choose_field(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    field = update.message.text.strip()
+    valid_fields = ["Loại", "Tên", "Module", "Mô Tả", "Version", "Giải Pháp"]
+    if field not in valid_fields:
+        return await cancel(update, context)
+
+    context.user_data["editing_field"] = field
+    await update.message.reply_text(f"✍️ Nhập giá trị mới cho {field}:")
+    return "SET_FIELD"
+
+async def set_field(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    new_value = update.message.text.strip()
+    field = context.user_data["editing_field"]
+    entry = context.user_data["edit_entry"]
+    data = context.user_data["data"]
+
+    entry[field] = new_value
+    save_data(data)
+
+    await update.message.reply_text(f"✅ Đã cập nhật {field} thành:\n➡️ {new_value}")
+    context.user_data.clear()
+    return ConversationHandler.END
+
 # --- Command: /cancel hoặc "Huỷ" ---
 async def cancel(update: Update, context: ContextTypes.DEFAULT_TYPE):
     context.user_data.clear()
@@ -144,7 +207,6 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         return
 
     response_parts = []
-
     for item in results:
         loai = item.get("Loại", "").capitalize()
         module = item.get("Module", "")
@@ -154,27 +216,21 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         giai_phap = item.get("Giải Pháp", "")
         id_ = item.get("ID", "")
 
-        if loai == "Issue":
-            part = (
-                f"[{version}] {module}\n"
-                f"❗ Issue: {ten}\n"
-                f"📌 Nguyên nhân: {mo_ta}\n"
-                f"✅ Giải pháp: {giai_phap}\n"
-                f"🆔 ID: {id_}"
-            )
-        elif loai == "Note":
-            part = f"📝 {module}:\n{mo_ta}\n🆔 ID: {id_}"
-        elif loai == "Logic":
-            part = f"⚙️ {module}:\n"
-            for line in mo_ta.split(";"):
-                line = line.strip()
-                if line:
-                    part += f" - {line}\n"
-            part = part.strip() + f"\n🆔 ID: {id_}"
-        else:
-            part = json.dumps(item, ensure_ascii=False, indent=2)
+        part = (
+            f"🔖 Loại: {loai}\n"
+            f"📌 Module: {module}\n"
+            f"🆔 ID: {id_}\n"
+        )
+        if version:
+            part += f"🧩 Version: {version}\n"
+        if ten:
+            part += f"📎 Tên: {ten}\n"
+        if mo_ta:
+            part += f"📄 Mô tả: {mo_ta}\n"
+        if giai_phap:
+            part += f"✅ Giải pháp: {giai_phap}"
 
-        response_parts.append(part)
+        response_parts.append(part.strip())
 
     full_response = "\n\n---\n\n".join(response_parts)
     max_len = 4000
@@ -222,7 +278,18 @@ if __name__ == '__main__':
         fallbacks=[CommandHandler("cancel", cancel)],
     )
 
+    edit_conv = ConversationHandler(
+        entry_points=[CommandHandler("edit", start_edit)],
+        states={
+            EDIT_ID: [MessageHandler(filters.TEXT & ~filters.COMMAND, edit_entry)],
+            "CHOOSE_FIELD": [MessageHandler(filters.TEXT & ~filters.COMMAND, choose_field)],
+            "SET_FIELD": [MessageHandler(filters.TEXT & ~filters.COMMAND, set_field)],
+        },
+        fallbacks=[CommandHandler("cancel", cancel), cancel_text],
+    )
+
     app.add_handler(add_conv)
+    app.add_handler(edit_conv)
     app.add_handler(CommandHandler("cancel", cancel))
     app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
     app.add_error_handler(error_handler)

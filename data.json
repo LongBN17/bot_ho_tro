@@ -2,601 +2,1000 @@
   {
     "ID": 1,
     "Loại": "Issue",
+    "Version": "4.0",
     "Tên": "Khi chỉnh sửa đơn hàng thì báo Bạn phải trả hàng trước khi thay đổi thông tin",
     "Module": "Đơn hàng",
     "Mô Tả": "Do xuất thừa sản phẩm trong đơn hàng",
-    "Giải Pháp": "Trả bớt hàng sẽ sửa được đơn hàng",
-    "Version": "4.0"
+    "Giải Pháp": "Trả bớt hàng sẽ sửa được đơn hàng"
   },
   {
     "ID": 2,
     "Loại": "Issue",
+    "Version": "4.0",
     "Tên": "ViettelPost không tự link địa chỉ khi tạo vận đơn",
     "Module": "Đơn hàng - Vận chuyển",
     "Mô Tả": "Do thông tin địa chỉ bên mình không khớp với bên ViettelPost",
-    "Giải Pháp": "Khách hàng tự điền",
-    "Version": "4.0"
+    "Giải Pháp": "Khách hàng tự điền"
   },
   {
     "ID": 3,
     "Loại": "Issue",
+    "Version": "4.0",
     "Tên": "Kết nối Mail PA không nhận được mail cấu hình",
     "Module": "Email Marketing",
     "Mô Tả": "Thông tin kết nối sai, phải có ssl:// ở đằng trước địa chỉ SMTP",
-    "Giải Pháp": "Bổ sung đúng thông tin",
-    "Version": "4.0"
+    "Giải Pháp": "Bổ sung đúng thông tin"
   },
   {
     "ID": 4,
     "Loại": "Issue",
+    "Version": "4.0",
     "Tên": "Sai thông tin báo cáo",
     "Module": "Báo cáo",
     "Mô Tả": "Phòng ban mặc định đang chọn là Phòng kinh doanh, dữ liệu load chậm đè lên dữ liệu đã chọn",
-    "Giải Pháp": "Đợi các cột load xong thông tin",
-    "Version": "4.0"
+    "Giải Pháp": "Đợi các cột load xong thông tin"
   },
   {
     "ID": 5,
     "Loại": "Note",
+    "Version": "",
+    "Tên": "",
     "Module": "Đơn hàng",
-    "Mô Tả": "Upload file nếu bị lỗi giới hạn thì hỏi anh Duy. Upload file nếu bị lỗi định danh thì hỏi anh Sang"
+    "Mô Tả": "Upload file nếu bị lỗi giới hạn thì hỏi anh Duy. Upload file nếu bị lỗi định danh thì hỏi anh Sang",
+    "Giải Pháp": ""
   },
   {
     "ID": 6,
     "Loại": "Note",
+    "Version": "",
+    "Tên": "",
     "Module": "KPI",
-    "Mô Tả": "Khi KPI tốt theo chiều hướng giảm thì chỉ cần thực tế chưa bằng chỉ tiêu, hệ thống sẽ gán mức KPI cao nhất (vd: 150%)"
+    "Mô Tả": "Khi KPI tốt theo chiều hướng giảm thì chỉ cần thực tế chưa bằng chỉ tiêu, hệ thống sẽ gán mức KPI cao nhất (vd: 150%)",
+    "Giải Pháp": ""
   },
   {
     "ID": 7,
     "Loại": "Note",
+    "Version": "",
+    "Tên": "",
     "Module": "Tổng đài",
-    "Mô Tả": "Logs từ tổng đài Mộc Media hiển thị thế nào là do dữ liệu từ tổng đài đẩy sang"
+    "Mô Tả": "Logs từ tổng đài Mộc Media hiển thị thế nào là do dữ liệu từ tổng đài đẩy sang",
+    "Giải Pháp": ""
   },
   {
     "ID": 8,
     "Loại": "Note",
+    "Version": "6.0",
+    "Tên": "",
     "Module": "KPI",
-    "Mô Tả": "Hiện trên app chỉ có KPI v3 và tên khác là G-version"
+    "Mô Tả": "Hiện trên app chỉ có KPI v3 và tên khác là G-version",
+    "Giải Pháp": ""
   },
   {
     "ID": 9,
     "Loại": "Note",
+    "Version": "",
+    "Tên": "",
     "Module": "Tổng đài",
-    "Mô Tả": "Tổng đài kết nối bằng API thì không reset logs được, cần báo khách xoá logs cũ và báo tổng đài đẩy lại"
+    "Mô Tả": "Tổng đài kết nối bằng API thì không reset logs được, cần báo khách xoá logs cũ và báo tổng đài đẩy lại",
+    "Giải Pháp": ""
   },
   {
     "ID": 10,
     "Loại": "Logic",
+    "Version": "",
+    "Tên": "",
     "Module": "Tổng đài",
-    "Mô Tả": "Description: Tổng đài chỉ hỗ trợ dùng trên 1 tab (CRM hoặc Fastcall); Issues: Ấn nghe không được, mất nút nghe; Ngắt máy không đóng popup, dù đã thiết lập tự động"
+    "Mô Tả": "Description: Tổng đài chỉ hỗ trợ dùng trên 1 tab (CRM hoặc Fastcall); Issues: Ấn nghe không được, mất nút nghe; Ngắt máy không đóng popup, dù đã thiết lập tự động",
+    "Giải Pháp": ""
   },
   {
     "ID": 11,
     "Loại": "Logic",
-    "Module": "Danh sách Server riêng",
-    "Mô Tả": "https://adg.getflycrm.com; https://korea.getflycrm.com; https://vienthammykorea.getflycrm.com; https://fast14.getflycrm.com; https://cngvietnam.getflycrm.com; https://crm.jwhospital.vn; https://daivietsaigonedu.getflycrm.com; https://jw.getflycrm.com; https://honeycomb; https://getfly.upstation.vn; https://getfly.minhtrithanh.vn; https://crm.bvnaman.com/"
+    "Version": "6.0 + 4.0",
+    "Tên": "Danh sách server riêng",
+    "Module": "",
+    "Mô Tả": "https://adg.getflycrm.com; https://korea.getflycrm.com; https://vienthammykorea.getflycrm.com; https://fast14.getflycrm.com; https://cngvietnam.getflycrm.com; https://crm.jwhospital.vn; https://daivietsaigonedu.getflycrm.com; https://jw.getflycrm.com; https://honeycomb; https://getfly.upstation.vn; https://getfly.minhtrithanh.vn; https://crm.bvnaman.com/",
+    "Giải Pháp": "Khi gặp các domain này thì báo lại với bên quản lí server khách hàng kiểm tra"
+  },
+  {
+    "ID": 12,
+    "Loại": "Note",
+    "Version": "6.0 + 4.0",
+    "Tên": "Tại sao tài khoản của tôi không hiển thị poup cuộc gọi đến?",
+    "Module": "Tổng đài",
+    "Mô Tả": "Các nguyên nhân có thể gặp phải?\n- Chưa cài máy nhánh\n- Chưa có quyền truy cập tổng đài và thêm cuộc gọi\n- Chưa cấu hình tổng đài\n- Tổng đài chưa đẩy sự kiện về Getfly\n- Server báo cuộc gọi của Getfly có vấn đề",
+    "Giải Pháp": "Hướng xử lý\n- Vào quản lý người dùng > Sửa thông tin người dùng > Cài đặt máy nhánh\n- Vào cài đặt > Phân quyền > Thêm quyền\n- Xin thông tin tổng đài > và cấu hình vào hệ thống\n- Báo đổi tác tổng đài kiểm tra xem đã có sự kiện cuộc gọi đổ về Getfly chưa\n- Báo kỹ thuật Getfly kiểm tra"
+  },
+  {
+    "ID": 13,
+    "Loại": "Note",
+    "Version": "6.0 + 4.0",
+    "Tên": "Tại sao tôi không thể gọi điện được trên phần mềm?",
+    "Module": "Tổng đài",
+    "Mô Tả": "Các nguyên nhân có thể gặp phải?\n- Chưa cài tổng đài/ máy nhánh\n- Mật khẩu máy nhánh bị sai\n- Mở nhiều tab trên phần mềm ( đối với tổng đài 3C)\n- Trình duyệt chưa có quyền yêu cầu truy cập micro/headfone\n- Chưa cắm head phone ( đối với trường hợp nghe gọi trên trình duyệt)\n- Do tổng đài chỉ cho gọi nhà mạng nhất định",
+    "Giải Pháp": "Hướng xử lý\n- Vào quản lý người dùng > Sửa thông tin người dùng > Cài đặt máy nhánh\n- Vào quản lý người dùng > Sửa thông tin người dùng > Cài đặt máy nhánh\n- Chỉ dùng 1 tab trên trình duyệt, tránh mở nhiều tab\n- Cài đặt cho phép truy cập mic trên trình duyệt"
   },
   {
     "ID": 14,
     "Loại": "Note",
-    "Module": "Các câu hỏi liên quan đến tổng đài",
-    "Mô Tả": "Tại sao tài khoản của tôi không hiển thị poup cuộc gọi đến?"
+    "Version": "6.0 + 4.0",
+    "Tên": "Tại sao trên tổng đài có logs cuộc gọi mà Getfly không có?",
+    "Module": "Tổng đài",
+    "Mô Tả": "Các nguyên nhân có thể gặp phải?\n- Do tổng đài không trả logs về qua API\n- Do chưa cấu hình link nhận logs\n- Do cấu hình sai link nhận logs (có chứa khoảng trắng)\n- Do cron bị tắt",
+    "Giải Pháp": "Hướng xử lý\n- Liên hệ với tổng đài kiểm tra xem dữ liệu có gửi qua Getfly không?\n- Vào cấu hình tổng đài > cấu hình đường dẫn nhận log\n- Sửa lại cấu hình cho đúng\n- Kỹ thuật Getfly xử lý"
   },
   {
     "ID": 15,
     "Loại": "Note",
-    "Module": "Các nguyên nhân có thể gặp phải?",
-    "Mô Tả": "Chưa cài máy nhánh \n\n \n\n \n\n Chưa có quyền truy cập tổng đài và thêm cuộc gọi \n\n \n\n \n\n Chưa cấu hình tổng đài \n\n \n\n \n\n Tổng đài chưa đẩy sự kiện về Getfly \n\n \n\n \n\n Server báo cuộc gọi của Getfly có vấn đề \n\n \n\n \n\n \n\n Hướng xử lý \n\n \n\n \n\n \n\n Vào quản lý người dùng > Sửa thông tin người dùng > Cài đặt máy nhánh \n\n \n\n \n\n Vào cài đặt > Phân quyền > Thêm quyền \n\n \n\n \n\n Xin thông tin tổng đài > và cấu hình vào hệ thống \n\n \n\n \n\n Báo đổi tác tổng đài kiểm tra xem đã có sự kiện cuộc gọi đổ về Getfly chưa \n\n \n\n \n\n Báo kỹ thuật Getfly kiểm tra"
+    "Version": "6.0 + 4.0",
+    "Tên": "KH dùng tổng đài ODS, không thấy có popup cuộc gọi đến",
+    "Module": "Tổng đài",
+    "Mô Tả": "Các nguyên nhân có thể gặp phải?\n- Do copy sai thông tin cấu hình gửi cho tổng đài\n- Do tổng đài không gửi sự kiện incoming sang bên Getfly",
+    "Giải Pháp": "Hướng xử lý\n- Cấu hình lại\n- Cấu hình lại"
+  },
+  {
+    "ID": 16,
+    "Loại": "Note",
+    "Version": "6.0 + 4.0",
+    "Tên": "Tổng đài gọi báo không nghe máy?",
+    "Module": "Tổng đài",
+    "Mô Tả": "Các nguyên nhân có thể gặp phải?\n- Do chưa có mic, tai nghe chuyên dụng\n- Do sai cấu hình máy lẻ\n- Do lỗi bên tổng đài",
+    "Giải Pháp": "Hướng xử lý\n- Gọi thử trên trang tổng đài( đối với epacific, VHT)\n- Gọi qua URL click to call đối với tổng đài tích hợp theo API"
   },
   {
     "ID": 17,
     "Loại": "Note",
-    "Module": "Nguyên nhân có thể gặp phải?",
-    "Mô Tả": "Chưa cài tổng đài/ máy nhánh \n\n Mật khẩu máy nhánh bị sai \n\n Mở nhiều tab trên phần mềm ( đối với tổng đài 3C) \n\n Trình duyệt chưa có quyền yêu cầu truy cập micro/headfone \n\n Chưa cắm head phone ( đối với trường hợp nghe gọi trên trình duyệt) \n\n Do tổng đài chỉ cho gọi nhà mạng nhất định \n\n \n\n Hướng giải quyết \n\n \n\n Vào quản lý người dùng > Sửa thông tin người dùng > Cài đặt máy nhánh \n\n Vào quản lý người dùng > Sửa thông tin người dùng > Cài đặt máy nhánh \n\n Chỉ dùng 1 tab trên trình duyệt, tránh mở nhiều tab \n\n Cài đặt cho phép truy cập mic trên trình duyệt\n\nTại sao trên tổng đài có logs cuộc gọi mà Getfly không có"
+    "Version": "6.0 + 4.0",
+    "Tên": "Click gọi báo máy lẻ chưa đăng ký",
+    "Module": "Tổng đài",
+    "Mô Tả": "Các nguyên nhân có thể gặp phải?\n- Do máy lẻ chưa được kích hoạt\n- Do nhập sai mật khẩu, mật khẩu có khoảng trắng\n- Do khách hàng thay đổi mật khẩu",
+    "Giải Pháp": ""
   },
   {
     "ID": 18,
     "Loại": "Note",
-    "Module": "Do tổng đài không trả logs về qua API",
-    "Mô Tả": "Liên hệ với tổng đài kiểm tra xem dữ liệu có gửi qua Getfly không? \n\n \n\n \n\n Do chưa cấu hình link nhận logs \n\n Vào cấu hình tổng đài > cấu hình đường dẫn nhận log \n\n \n\n \n\n Do cấu hình sai link nhận logs (có chứa khoảng trắng) \n\n Sửa lại cấu hình cho đúng \n\n \n\n \n\n Do cron bị tắt \n\n Kỹ thuật Getfly xử lý\n\nKH dùng tổng đài ODS, không thấy có popup cuộc gọi đến"
+    "Version": "6.0 + 4.0",
+    "Tên": "Tại sao dùng tổng đài 3C + Caresoft tôi không click gọi ra được",
+    "Module": "Tổng đài",
+    "Mô Tả": "Các nguyên nhân có thể gặp phải?\n- Tổng đài 3c và tổng đài Caresoft là 2 tổng đài đặc biệt, chỉ gọi được trên 1 tab, nếu mở nhiều tab sẽ không gọi ra được",
+    "Giải Pháp": ""
   },
   {
     "ID": 19,
     "Loại": "Note",
-    "Module": "Nguyên nhân",
-    "Mô Tả": "Hướng khắc phục \n\n \n\n \n\n Do copy sai thông tin cấu hình gửi cho tổng đài \n\n Cấu hình lại \n\n \n\n \n\n Do tổng đài không gửi sự kiện incoming sang bên Getfly \n\n Cấu hình lại"
+    "Version": "6.0 + 4.0",
+    "Tên": "Tổng đài ODS hiển thị nhân log, hiển thị sai log",
+    "Module": "Tổng đài",
+    "Mô Tả": "Các nguyên nhân có thể gặp phải?\n- ODS là một tổng đài đặc biệt, ngoài trả log qua API còn trả log qua webhook. Cơ chế lấy log của bên này: qua webhook cho các log gọi nghe máy, qua API cho cuộc lỡ.\n- Tổng đài sẽ trả log song song giữa API và Webhook.\n- Như ở trên đã nói về cơ chế lấy log của bên ODS là qua cả webhook và API, nếu như log trên webhook và API do tổng đài trả không đồng bộ thì sẽ xảy ra tình trạng trên.",
+    "Giải Pháp": ""
+  },
+  {
+    "ID": 20,
+    "Loại": "Note",
+    "Version": "6.0 + 4.0",
+    "Tên": "Cơ chế lấy log qua webhook và API có gì khác nhau?",
+    "Module": "Tổng đài",
+    "Mô Tả": "1. Qua webhook:\n- Các tổng đài đẩy log qua webhook sẽ chỉ đi một chiều từ tổng đài sang bên mình.\n- Các log đẩy qua đây không thể reset được.\n- Không kiểm tra được thông tin log đẩy qua webhook.\n2. Qua API: \n- Tổng đài sẽ trả log về trên API . Bên mình sẽ lấy log từ trên API về, với thời gian 5 phút 1 lần.\n- Các log thiếu sẽ reset được tự động bằng cách mở reset trong hệ thống gms2.\n- Có thể kiểm tra việc log có về hay không qua truy vấn trên API.",
+    "Giải Pháp": ""
   },
   {
     "ID": 21,
     "Loại": "Note",
-    "Module": "Nguyên nhân",
-    "Mô Tả": "Hướng khắc phục \n\n \n\n \n\n Do chưa có mic, tai nghe chuyên dụng \n\n \n\n \n\n \n\n Do sai cấu hình máy lẻ \n\n \n\n \n\n \n\n Do lỗi bên tổng đài \n\n 1. Gọi thử trên trang tổng đài( đối với epacific, VHT) 2. Gọi qua URL click to call đối với tổng đài tích hợp theo API"
+    "Version": "6.0 + 4.0",
+    "Tên": "Chuông reo khi đang nghe điện thoại",
+    "Module": "Tổng đài",
+    "Mô Tả": "Các nguyên nhân có thể gặp phải?\n- Khách hàng dùng epacific, kịch bản đổ chuông đồng thời\n- Khi máy lẻ này đang nghe cuộc gọi thì có cuộc gọi khác gọi đến vẫn đổ chuông, ảnh hưởng đến cuộc gọi",
+    "Giải Pháp": "Hướng xử lý\n- Vào cài đặt tích hợp -> bỏ bớt thông tin máy nhánh nhận cuộc gọi đi thì sẽ không bị nữa"
+  },
+  {
+    "ID": 22,
+    "Loại": "Note",
+    "Version": "6.0 + 4.0",
+    "Tên": "Các trạng thái trả về popup gọi đi của tổng đài",
+    "Module": "Tổng đài",
+    "Mô Tả": "1. Không nghe máy:\n- Cuộc gọi không tới máy khách hàng.\n- Cuộc gọi bị trả về failed từ phía tổng đài.\n2. Tự tắt popup: \n- Cuộc gọi đã kết thúc và do khách hàng tắt máy.\n- Khách hàng máy bận.\n- Khách hàng cho số điện thoại vào danh sách chặn.\n- Khách hàng click từ chối",
+    "Giải Pháp": ""
   },
   {
     "ID": 23,
     "Loại": "Note",
-    "Module": "Nguyên nhân có thể có",
-    "Mô Tả": "Do máy lẻ chưa được kích hoạt Do nhập sai mật khẩu, mật khẩu có khoảng trắng Do khách hàng thay đổi mật khẩu\n\nTại sao dùng tổng đài 3C + Caresoft tôi không click gọi ra được\nTổng đài 3c và tổng đài Caresoft là 2 tổng đài đặc biệt, chỉ gọi được trên 1 tab, nếu mở nhiều tab sẽ không gọi ra được"
+    "Version": "6.0 + 4.0",
+    "Tên": "Tại sao số phút gọi đi/gọi đến không đếm/không hiển thị đúng",
+    "Module": "Tổng đài",
+    "Mô Tả": "Các nguyên nhân có thể gặp phải?\n- Số phút cuộc gọi được đếm khi cuộc gọi có phát sinh là cuộc gọi kết thúc, không phân biệt là cuộc gọi tạo tay hay đổ về từ hệ thống tổng đài.\n- Chuỗi sđt phải là 10 số",
+    "Giải Pháp": ""
   },
   {
     "ID": 24,
     "Loại": "Note",
-    "Module": "Tổng đài ODS hiển thị nhân log, hiển thị sai log",
-    "Mô Tả": "1. Vì sao có trường hợp nhân log. \n\n - ODS là một tổng đài đặc biệt, ngoài trả log qua API còn trả log qua webhook. Cơ chế lấy log của bên này: qua webhook cho các log gọi nghe máy, qua API cho cuộc lỡ. \n\n - Tổng đài sẽ trả log song song giữa API và Webhook. \n\n - Nếu trường hợp webhook trả thiếu -> cần reset lại thì thông tin log lại phải lấy bên API => dẫn đến trường hợp trùng log. \n\n 2. Trường hợp log trên Getfly hiển thị số điện thoại  khác với tổng đài: \n\n - Ví dụ: KH bấm số 8984xxxx  \n\n -> Hiển thị log bên Getfly là 8984xxxx  \n\n -> Hiển thị bên tổng đài là 0984xxxxx \n\n - Nguyên nhân vì sao có sự khác nhau?  \n\n + Như ở trên đã nói về cơ chế lấy log của bên ODS là qua cả webhook và API, nếu như log trên webhook và API do tổng đài trả không đồng bộ thì sẽ xảy ra tình trạng trên."
+    "Version": "6.0 + 4.0",
+    "Tên": "Hàm makecall - Tổng đài yêu cầu cung cấp thông tin liên quan tới hàm makecall",
+    "Module": "Tổng đài",
+    "Mô Tả": "Các nguyên nhân có thể gặp phải?\n- Công việc liên quan: https://1.getfly.vn/#/tasks/?task_id=263291\n- Khi khách hàng ấn bao nhiêu lần thì sinh ra từng đó request.",
+    "Giải Pháp": ""
   },
   {
     "ID": 25,
     "Loại": "Note",
-    "Module": "Cơ chế lấy log qua webhook và API có gì khác nhau?",
-    "Mô Tả": "1. Qua webhook: \n\n - Các tổng đài đẩy log qua webhook sẽ chỉ đi một chiều từ tổng đài sang bên mình. \n\n - Các log đẩy qua đây không thể reset được. \n\n - Không kiểm tra được thông tin log đẩy qua webhook. \n\n 2. Qua API: \n\n - Tổng đài sẽ trả log về trên API . Bên mình sẽ lấy log từ trên API về, với thời gian 5 phút 1 lần. \n\n - Các log thiếu sẽ reset được tự động bằng cách mở reset trong hệ thống gms2. \n\n - Có thể kiểm tra việc log có về hay không qua truy vấn trên API."
+    "Version": "6.0 + 4.0",
+    "Tên": "Tổng đài kết nối vào mình có thể thêm API khác nhận log không",
+    "Module": "Tổng đài",
+    "Mô Tả": "Các nguyên nhân có thể gặp phải?\n- Công việc liên quan: https://1.getfly.vn/#/tasks/?task_id=278151",
+    "Giải Pháp": ""
+  },
+  {
+    "ID": 26,
+    "Loại": "Note",
+    "Version": "4.0",
+    "Tên": "Vì sao log cuộc gọi thời lượng >10 phút không đổ về?",
+    "Module": "Tổng đài",
+    "Mô Tả": "Các nguyên nhân có thể gặp phải?\n- Công việc liên quan: https://1.getfly.vn/#/tasks/?task_id=280849\n- Công việc liên quan: https://1.getfly.vn/#/tasks/?task_id=293823\n- Cơ chế: phần mềm bên mình giới hạn thời lượng cuộc gọi khoảng 10 phút vì thế sẽ không đẩy được các log có thời lượng lớn hơn.",
+    "Giải Pháp": "Hướng xử lý\n- Sử dụng tính năng reset cuộc gọi để lấy log về."
   },
   {
     "ID": 27,
     "Loại": "Note",
-    "Module": "Kh dùng epacific, kịch bản đổ chuông đồng thời",
-    "Mô Tả": "Khi máy lẻ này đang nghe cuộc gọi thì có cuộc gọi khác gọi đến vẫn đổ chuông, ảnh hưởng đến cuộc gọi \n\n => Cách xử lý: vào cài đặt tích hợp -> bỏ bớt thông tin máy nhánh nhận cuộc gọi đi thì sẽ không bị nữa"
+    "Version": "6.0 + 4.0",
+    "Tên": "Log cuộc gọi không ghi nhận tên nhân viên theo máy nhánh",
+    "Module": "Tổng đài",
+    "Mô Tả": "Các nguyên nhân có thể gặp phải?\n- Công việc liên quan: https://1.getfly.vn/#/tasks/?task_id=293964",
+    "Giải Pháp": "Hướng xử lý\n- Thông tin log bên tổng đài truyền sang (thông tin kỹ thuật) không phải log ghi nhận ở danh sách cuộc gọi bên tổng đài.\n- Log được truyên sang chủ động từ bên tổng đài hay do Get gọi về."
   },
   {
     "ID": 28,
     "Loại": "Note",
-    "Module": "Các trạng thái trả về popup gọi đi của tổng đài",
-    "Mô Tả": "1. Không nghe máy: \n\n - Cuộc gọi không tới máy khách hàng. \n\n - Cuộc gọi bị trả về failed từ phía tổng đài. \n\n 2. Tự tắt popup: \n\n - Cuộc gọi đã kết thúc và do khách hàng tắt máy. \n\n - Khách hàng máy bận. \n\n - Khách hàng cho số điện thoại vào danh sách chặn. - Khách hàng click từ chối.\n\nTại sao số phút gọi đi/gọi đến không đếm/không hiển thị đúng"
+    "Version": "6.0 + 4.0",
+    "Tên": "Không thống kê số phút gọi ở call center",
+    "Module": "Tổng đài",
+    "Mô Tả": "Các nguyên nhân có thể gặp phải?\n- Công việc liên quan: https://1.getfly.vn/#/tasks/?task_id=295496\n- Lưu ý: số điện thoại phải là 10 số thì mới được tính vào số phút gọi.",
+    "Giải Pháp": ""
   },
   {
     "ID": 29,
     "Loại": "Note",
-    "Module": "Quy tắc:",
-    "Mô Tả": "Số phút cuộc gọi được đếm khi cuộc gọi có phát sinh là cuộc gọi kết thúc, không phân biệt là cuộc gọi tạo tay hay đổ về từ hệ thống tổng đài. \n Chuỗi sđt phải là 10 số\n\nHàm makecall - Tổng đài yêu cầu cung cấp thông tin liên quan tới hàm makecall\nhttps://1.getfly.vn/#/tasks/?task_id=263291 \n Khi khách hàng ấn bao nhiêu lần thì sinh ra từng đó request.\n\nTổng đài kết nối vào mình có thể thêm API khác nhận log không\nhttps://1.getfly.vn/#/tasks/?task_id=278151\n\n4.0 Vì sao log cuộc gọi thời lượng >10 phút không đổ về"
+    "Version": "6.0 + 4.0",
+    "Tên": "Tổng đài Fastcall- Không nghe được gọi đến khi mở nhiều tab",
+    "Module": "Tổng đài",
+    "Mô Tả": "Các nguyên nhân có thể gặp phải?\n- Công việc liên quan: https://1.getfly.vn/#/tasks/?task_id=298060",
+    "Giải Pháp": ""
   },
   {
     "ID": 30,
     "Loại": "Note",
-    "Module": "Một số công việc liên quan:",
-    "Mô Tả": "https://1.getfly.vn/#/tasks/?task_id=280849 \n https://1.getfly.vn/#/tasks/?task_id=293823 \n Cơ chế: phần mềm bên mình giới hạn thời lượng cuộc gọi khoảng 10 phút vì thế sẽ không đẩy được các log có thời lượng lớn hơn. \n Sử dụng tính năng reset cuộc gọi để lấy log về.\n\nLog cuộc gọi không ghi nhận tên nhân viên theo máy nhánh\nVấn đề: Log tổng đài đẩy về không thấy ghi nhận tên nhân viên tương ứng với số máy nhánh. Chỉ bị 1 số log (Gọi lỡ), các log khác vẫn ghi nhận đúng \n Công việc liên quan: https://1.getfly.vn/#/tasks/?task_id=293964 \n Thông tin cần lấy khi tiếp nhận công việc: \n \n Thông tin log bên tổng đài truyền sang (thông tin kỹ thuật) không phải log ghi nhận ở danh sách cuộc gọi bên tổng đài. \n Log được truyên sang chủ động từ bên tổng đài hay do Get gọi về."
+    "Version": "6.0 + 4.0",
+    "Tên": "Cách kiểm tra kết nối Zalo",
+    "Module": "Zalo",
+    "Mô Tả": "Hiện tại từ ngày 22/06 bên zaloOA có thay đổi: các tài khoản cần phải xác thực + trả phí mới có thể kết nối được: https://rd.zapps.vn/detail/4462152339089565647?id=5f1464e6dea337fd6eb2&pageId=4462152339089565647&broadcastId=bb25b3749031796f2020&audienceId=913534829462430143&utm_source=zalo&utm_medium=zalo&utm_campaign=zalo&zarsrc=33&fbclid=IwAR371iy1eGUAjyVAwz4V7ycyHwcRXpiwXr1D54KKXxnsQP4q3d2YQLs7P5Y",
+    "Giải Pháp": "Kiểm tra thông tin:\\\n- Thông tin xác thực tài khoản: Vào trang ZaloOA -> chọn quản lý tài khoản:\n+ Loại tài khoản: nếu là tài khoản đã xác thực sẽ hiển thị Tài khoản xác thực\n- Thông tin gói đã trả phí: Vào trang ZaloOA -> chọn quản lý gói:\n+ Tại đây sẽ hiển thị thông tin gói đã mua. Nếu chưa mua sẽ hiển thị màn hình thông báo chưa mua gói."
   },
   {
     "ID": 31,
     "Loại": "Note",
-    "Module": "Không thống kê số phút gọi ở call center",
-    "Mô Tả": "cv liên quan: https://1.getfly.vn/#/tasks/?task_id=295496 \n Ảnh: \n Lưu ý: số điện thoại phải là 10 số thì mới được tính vào số phút gọi.\n\nTổng đài Fastcall- Không nghe được gọi đến khi mở nhiều tab\nLink cv liên quan: https://1.getfly.vn/#/tasks/?task_id=298060"
+    "Version": "6.0 + 4.0",
+    "Tên": "Cách kiểm tra kết nối email",
+    "Module": "Email Marketing",
+    "Mô Tả": "Các bước thực hiện:\n1. Kiểm tra thông tin kết nối đã đúng, đủ thông tin chưa.\n2. Kiểm tra các ô nhập thông tin có ô nào chứa khoảng trắng hay không.\n3. Gửi email test cấu hình vào email của mình xem có nhận được không. Nếu không nhận được thì báo khách hàng kiểm tra lại thông tin cấu hình",
+    "Giải Pháp": ""
+  },
+  {
+    "ID": 32,
+    "Loại": "Note",
+    "Version": "6.0 + 4.0",
+    "Tên": "Vì sao tôi đăng nhập facebook bằng domain đổi lại báo lỗi",
+    "Module": "Facebook",
+    "Mô Tả": "Các bước thực hiện:\n1. Hiện tại muốn dùng module facebook trên Getfly cần đăng nhập vào domain do Getfly cung cấp -> vào social -> vào facebook -> đăng nhập.\n2. Vào domain đổi -> đăng nhập -> vào social -> chọn facebook sẽ hiển thị.",
+    "Giải Pháp": ""
   },
   {
     "ID": 33,
     "Loại": "Note",
-    "Module": "Tất tần tật về các kết nối:",
-    "Mô Tả": "- Kết nối Facebook\n- Kết nối Zalo\n- Kết nối API \n- Kết nối SMS\n- Kết nối email\n- Kết nối webhook"
+    "Version": "6.0 + 4.0",
+    "Tên": "Vì sao kết nối google sheet lại không đổ thông tin khách hàng về?",
+    "Module": "Google Sheets",
+    "Mô Tả": "Nguyên nhân có thể gặp:\n1. File thông tin trong google sheet đã bị thay đổi: thêm cột/dòng/ thêm thông tin bất kỳ trong 1 dòng bất kỳ bằng tay\n2. Do cấu hình sai -> cần kiểm tra lại các bước cấu hình.\n3. File thông tin sheet không phải file mới\n4. Thông tin tên cột bị thay đổi sau kết nối",
+    "Giải Pháp": ""
+  },
+  {
+    "ID": 33,
+    "Loại": "Note",
+    "Version": "6.0 + 4.0",
+    "Tên": "Khi nào email được tính đã đọc/chưa đọc/click link",
+    "Module": "Email Marketing",
+    "Mô Tả": "1. Khi nào email được tính đã đọc:\n- Trong mail sẽ gắn 1 cái link ảnh kích thước 1 pixel, khi mở mail nó sẽ load cái ảnh 1 pixel, lúc đó mình bắt cái URL ảnh được load thì là mail đó được đọc\n- Vì sao khi email đã mở ra đọc, hệ thống lại không ghi nhận? Vì có thể do trình đọc mail đã chặn ảnh 1 pixel nên hệ thống bên mình không bắt được thông tin ảnh -> không hiển thị trạng thái đã đọc\n2. Khi nào email tính là chưa đọc: \n- Khi hệ thống không bắt được ảnh 1 pixel gắn kèm mail\n- Khi người dùng chưa mở thư ra đọc\n3. Click link: \n- Vì sao khách hàng đã click vào link nhưng không tính là đã click: ? Trạng thái đọc email căn cứ vào một ảnh nhỏ được gắn vào email lúc gửi đi, nếu trường hợp mail client của khách hàng chặn ảnh thì sẽ không tính được trạng thái đã đọc. Trong trường hợp này nếu khách hàng vẫn click vào link thì email vẫn xác định là đã được đọc.",
+    "Giải Pháp": ""
   },
   {
     "ID": 34,
     "Loại": "Note",
-    "Module": "Cách kiểm tra kết nối Zalo",
-    "Mô Tả": "1. Hiện tại từ ngày 22/06 bên zaloOA có thay đổi: các tài khoản cần phải xác thực + trả phí mới có thể kết nối được: https://rd.zapps.vn/detail/4462152339089565647?id=5f1464e6dea337fd6eb2&pageId=4462152339089565647&broadcastId=bb25b3749031796f2020&audienceId=913534829462430143&utm_source=zalo&utm_medium=zalo&utm_campaign=zalo&zarsrc=33&fbclid=IwAR371iy1eGUAjyVAwz4V7ycyHwcRXpiwXr1D54KKXxnsQP4q3d2YQLs7P5Y \n\n 2. Để kiểm tra thông tin: \n\n - Thông tin xác thực tài khoản: Vào trang ZaloOA -> chọn quản lý tài khoản: \n\n \n\n + Loại tài khoản: nếu là tài khoản đã xác thực sẽ hiển thị Tài khoản xác thực \n\n - Thông tin gói đã trả phí: Vào trang ZaloOA -> chọn quản lý gói: \n\n \n\n + Tại đây sẽ hiển thị thông tin gói đã mua. Nếu chưa mua sẽ hiển thị màn hình thông báo chưa mua gói."
+    "Version": "6.0 + 4.0",
+    "Tên": "Thế nào là email sai định dạng/ email báo thất bại",
+    "Module": "Email Marketing",
+    "Mô Tả": "1. Email khi gửi bị báo thất bại:\n- Do trong email có chứa khoảng trắng\n- Do hết tiền\n- Do hết giới hạn mail hệ thống Getfly\n- Do hết giưới hạn email trên hệ thống mail của khách hàng\n- Do server mail bị lỗi, không đẩy được mail từ bên mình sang\n- Do bên mình bị tắt crontab dẫn đến email không được sinh ra\n- Do hệ thống bên mình gặp sự cố (trường hợp hiếm gặp)\n2. Email sai định dạng: \n- Do trong tên có khoảng trắng\n- Do trong email có chứa ký tự đặc biệt\n- Do email người dùng không tồn tại",
+    "Giải Pháp": ""
   },
   {
     "ID": 35,
     "Loại": "Note",
-    "Module": "Cách kiểm tra kết nối email",
-    "Mô Tả": "1. Kiểm tra thông tin kết nối đã đúng, đủ thông tin chưa. \n\n 2. Kiểm tra các ô nhập thông tin có ô nào chứa khoảng trắng hay không. \n\n 3. Gửi email test cấu hình vào email của mình xem có nhận được không. Nếu không nhận được thì báo khách hàng kiểm tra lại thông tin cấu hình\n\nVì sao tôi đăng nhập facebook bằng domain đổi lại báo lỗi\n1. Hiện tại muốn dùng module facebook trên Getfly cần đăng nhập vào domain do Getfly cung cấp -> vào social -> vào facebook -> đăng nhập.  \n\n 2. Vào domain đổi -> đăng nhập -> vào social -> chọn facebook sẽ hiển thị.\n\nVì sao kết nối google sheet lại không đổ thông tin khách hàng về?\n1. File thông tin trong google sheet đã bị thay đổi: thêm cột/dòng/ thêm thông tin bất kỳ trong 1 dòng bất kỳ bằng tay. \n\n 2. Do cấu hình sai -> cần kiểm tra lại các bước cấu hình.  \n\n 3. File thông tin sheet không phải file mới \n\n 4. Thông tin tên cột bị thay đổi sau kết nối\n\nTôi dùng tính năng truyền thông tin qua webhook cần dùng biến gì\nHiện tại không truyền được biến qua webhook, bên mình chỉ hỗ trợ truyền sự kiện. \n\n Muốn truyền biến thì cần sử dụng API"
+    "Version": "6.0 + 4.0",
+    "Tên": "Các chú ý đối với mail Gsuite/ Mail office365/Email không phải mail marketing",
+    "Module": "Email Marketing",
+    "Mô Tả": "Các chú ý đối với mail Gsuite/ Mail office365/Email không phải mail marketing\n1. Đối với email gửi đi không phải dịch vụ email marketing (Amazon, Mailgun, Sendgird, Linex) mà dùng dịch vụ email doanh nghiệp (Office365, Gmail) thì phải xem là tài khoản cấu hình gửi có cho phép gửi đi từ tài khoản email khác với tài khoản cấu hình không. Nếu không cho phép sẽ không gửi được mail đi từ bên mình.\n2. Đối với Gsuite/Office365: trên hệ thống khách hàng sẽ mặc định tài khoản gửi đi là mail hệ thống nên khi gửi email đi, dù chọn mail cá nhân cũng sẽ hiển thị là mail hệ thống\nPhần cho phép ứng dụng bên thứ 3 của Google bị tắt thì có gửi được mail không\n- Nếu Google tắt cho phép ứng dụng bên thứ 3 thì khi cấu hình vào hệ thống Getfly sẽ không gửi được mail + báo lỗi.\n- Google cấm app bên thứ 3 nên phải tạo lại password cho gmail. Hướng dẫn tạo App Password\nhttps: //www.nucleustechnologies.com/supportcenter/kb/how-to-create-an-app-password-for-gmail ( xem từ mục: create app password nhé, sau đó lấy được password mới thay cho mật khẩu cấu hình trong phần mềm.)",
+    "Giải Pháp": ""
+  },
+  {
+    "ID": 36,
+    "Loại": "Note",
+    "Version": "6.0 + 4.0",
+    "Tên": "Vì sao tôi gửi mail cấu hình thành công mà không nhận được mail?",
+    "Module": "Email Marketing",
+    "Mô Tả": "Nguyên nhân có thể gặp\n1. Do hòm thư của khách hàng đầy không nhận được mail nữa.\n2. Do mail vào spam.\n3. Do bên server mail gặp lỗi, không đẩy được mail tới khách hàng: \n- Nếu là Sendgrid thì vào trang email -> kiểm tra mail bounce xem mail đã được đẩy từ bên mình về chưa. Nếu có thì lỗi do bên server mail.\n- Nếu là Linex -> báo bên mail kiểm tra xem mail có đổ từ mình về không.",
+    "Giải Pháp": ""
+  },
+  {
+    "ID": 37,
+    "Loại": "Note",
+    "Version": "6.0 + 4.0",
+    "Tên": "Vì sao khi tôi chọn gửi email là email hệ thống nhưng khi nhận lại hiển thị là tên nhân viên?",
+    "Module": "Email Marketing",
+    "Mô Tả": "Nguyên nhân có thể gặp\n- Do email của hệ thống thiết lập trùng với email trong thông tin cá nhân của nhân viên\n- Vì sao lại ưu tiên hiển thị thông tin là tên nhân viên: Trong thiết lập email mình không lưu lại là tick chọn mail cá nhân hay mail hệ thống, chỉ lưu lại email gửi đi là gì thôi ạ, nên khi gửi hệ thống sẽ lấy email đó để so sánh với email của nhân viên và email hệ thống để lấy ra tên hiển thị khi gửi.",
+    "Giải Pháp": ""
   },
   {
     "ID": 38,
     "Loại": "Note",
-    "Module": "Khi nào email được tính đã đọc/chưa đọc/click link",
-    "Mô Tả": "1. Khi nào email được tính đã đọc: \n\n - Trong mail sẽ gắn 1 cái link ảnh kích thước 1 pixel, khi mở mail nó sẽ load cái ảnh 1 pixel, lúc đó mình bắt cái URL ảnh được load thì là mail đó được đọc \n\n - Vì sao khi email đã mở ra đọc, hệ thống lại không ghi nhận? Vì có thể do trình đọc mail đã chặn ảnh 1 pixel nên hệ thống bên mình không bắt được thông tin ảnh -> không hiển thị trạng thái đã đọc \n\n 2. Khi nào email tính là chưa đọc: \n\n - Khi hệ thống không bắt được ảnh 1 pixel gắn kèm mail \n\n - Khi người dùng chưa mở thư ra đọc \n\n 3. Click link: \n\n - Vì sao khách hàng đã click vào link nhưng không tính là đã click:? Trạng thái đọc email căn cứ vào một ảnh nhỏ được gắn vào email lúc gửi đi, nếu trường hợp mail client của khách hàng chặn ảnh thì sẽ không tính được trạng thái đã đọc. Trong trường hợp này nếu khách hàng vẫn click vào link thì email vẫn xác định là đã được đọc."
+    "Version": "6.0 + 4.0",
+    "Tên": "Template không hiển thị ảnh",
+    "Module": "Email Marketing",
+    "Mô Tả": "Nguyên nhân có thể gặp phải\n- Các template không hiển thị là do link ảnh đã cũ , quá thời gian xử lý của hệ thống --> nên nó không hiển thị ảnh\n- Nếu nội dung email template quá dài sẽ không lưu được ảnh thumbnail, hệ thống sẽ hiển thị ảnh mặc định (No Image) trong trường hợp này ạ.",
+    "Giải Pháp": "Hướng xử lý\n- Báo khách chọn 1 mẫu --> click vào button Sửa --> Click cập nhật ===> Thì ảnh sẽ hiển thị."
   },
   {
     "ID": 39,
+    "Loại": "Logic",
+    "Version": "6.0 + 4.0",
+    "Tên": "Logic gửi email đối với trường hợp auto",
+    "Module": "Email Marketing",
+    "Mô Tả": "- Một email không được gửi trùng tiêu đề trong 1 ngày với 1 khách hàng\n- Một email vẫn có thể gửi trùng tiêu đề trong 1 ngày với nhiều khách hàng khác nhau . Với điều kiện là không được trùng email",
+    "Giải Pháp": ""
+  },
+  {
+    "ID": 40,
     "Loại": "Note",
-    "Module": "Thế nào là email sai định dạng/ email báo thất bại",
-    "Mô Tả": "1. Email khi gửi bị báo thất bại: \n\n - Do trong email có chứa khoảng trắng \n\n - Do hết tiền  \n\n - Do hết giới hạn mail hệ thống Getfly \n\n - Do hết giưới hạn email trên hệ thống mail của khách hàng \n\n - Do server mail bị lỗi, không đẩy được mail từ bên mình sang \n\n - Do bên mình bị tắt crontab dẫn đến email không được sinh ra \n\n - Do hệ thống bên mình gặp sự cố (trường hợp hiếm gặp) \n\n 2. Email sai định dạng: \n\n - Do trong tên có khoảng trắng \n\n - Do trong email có chứa ký tự đặc biệt \n\n - Do email người dùng không tồn tại\n\nCác chú ý đối với mail Gsuite/ Mail office365/Email không phải mail marketing\n1. Đối với email gửi đi không phải dịch vụ email marketing (Amazon, Mailgun, Sendgird, Linex) mà dùng dịch vụ email doanh nghiệp (Office365, Gmail) thì phải xem là tài khoản cấu hình gửi có cho phép gửi đi từ tài khoản email khác với tài khoản cấu hình không. Nếu không cho phép sẽ không gửi được mail đi từ bên mình. \n\n 2. Đối với Gsuite/Office365: trên hệ thống khách hàng sẽ mặc định tài khoản gửi đi là mail hệ thống nên khi gửi email đi, dù chọn mail cá nhân cũng sẽ hiển thị là mail hệ thống\n\nPhần cho phép ứng dụng bên thứ 3 của Google bị tắt thì có gửi được mail không\n- Nếu Google tắt cho phép ứng dụng bên thứ 3 thì khi cấu hình vào hệ thống Getfly sẽ không gửi được mail + báo lỗi. \n\n - Google cấm app bên thứ 3 nên phải tạo lại password cho gmail. Hướng dẫn tạo App Password  \n\n https://www.nucleustechnologies.com/supportcenter/kb/how-to-create-an-app-password-for-gmail ( xem từ mục: create app password nhé, sau đó lấy được password mới thay cho mật khẩu cấu hình trong phần mềm.)\n\nVì sao tôi gửi mail cấu hình thành công mà không nhận được mail\n1. Do hòm thư của khách hàng đầy không nhận được mail nữa. \n\n 2. Do mail vào spam. \n\n 3. Do bên server mail gặp lỗi, không đẩy được mail tới khách hàng: \n\n - Nếu là Sendgrid thì vào trang email -> kiểm tra mail bounce xem mail đã được đẩy từ bên mình về chưa. Nếu có thì lỗi do bên server mail. \n\n - Nếu là Linex -> báo bên mail kiểm tra xem mail có đổ từ mình về không.\n\nVì sao khi tôi chọn gửi email là email hệ thống nhưng khi nhận lại hiển thị là tên nhân viên?\n- Do email của hệ thống thiết lập trùng với email trong thông tin cá nhân của nhân viên \n\n - Vì sao lại ưu tiên hiển thị thông tin là tên nhân viên: Trong thiết lập email mình không lưu lại là tick chọn mail cá nhân hay mail hệ thống, chỉ lưu lại email gửi đi là gì thôi ạ, nên khi gửi hệ thống sẽ lấy email đó để so sánh với email của nhân viên và email hệ thống để lấy ra tên hiển thị khi gửi."
+    "Version": "6.0 + 4.0",
+    "Tên": "Vì sao mail gun khi tích hợp lại báo không kết nối được máy chủ?",
+    "Module": "Email Marketing",
+    "Mô Tả": "Nguyên nhân có thể gặp\n- Do tk mail free nên k gửi đc cho các email ngoài dsach đã đăng ký\n- Link công việc: https://1.getfly.vn/#/tasks/?task_id=259276",
+    "Giải Pháp": ""
   },
   {
     "ID": 41,
     "Loại": "Note",
-    "Module": "Xảy ra 2 trường hợp :",
-    "Mô Tả": "TH1 : Các template không hiển thị là do link ảnh đã cũ , quá thời gian xử lý của hệ thống --> nên nó không hiển thị ảnh  Hướng xử lý : C báo khách chọn 1 mẫu --> click vào button Sửa --> Click cập nhật ===> Thì ảnh sẽ hiển thị . \n\n TH2:  Nếu nội dung email template quá dài sẽ không lưu được ảnh thumbnail, hệ thống sẽ hiển thị ảnh mặc định (No Image) trong trường hợp này ạ . \" như ảnh trên \""
+    "Version": "6.0",
+    "Tên": "Vì sao email báo đã đọc dù chưa đọc?",
+    "Module": "",
+    "Mô Tả": "- Trên điện thoại có phần báo noti, và nếu để có đọc trước thì khi noti báo mail tới dthoai trên hệ thống sẽ tự đọc luôn. Trường hợp kiểm tra là khi chưa vào đọc noti trên dthoai",
+    "Giải Pháp": ""
   },
   {
     "ID": 42,
     "Loại": "Note",
-    "Module": "Logic gửi email đối với trường hợp auto",
-    "Mô Tả": "- Một email không được gửi trùng tiêu đề trong 1 ngày với 1 khách hàng  \n\n - Một email vẫn có thể gửi trùng tiêu đề trong 1 ngày với nhiều khách hàng khác nhau . Với điều kiện là không được trùng email \n\nVì sao mail gun khi tích hợp lại báo không kết nối được máy chủ\nLink công việc: https://1.getfly.vn/#/tasks/?task_id=259276 \n\n Nguyên nhân: do tk mail free nên k gửi đc cho các email ngoài dsach đã đăng ký"
+    "Version": "6.0 + 4.0",
+    "Tên": "Vì sao khi chọn gửi là mail cá nhân nhưng nhận được là mail hệ thống?",
+    "Module": "Email Marketing",
+    "Mô Tả": "- Nguyên nhân vì Gsuit quy định mail gửi là mail nào thì gửi mail đó, Getfly không quy định.\n- Link công việc liên quan: https: //1.getfly.vn/#/tasks/?task_id=285066",
+    "Giải Pháp": ""
   },
   {
     "ID": 43,
     "Loại": "Note",
-    "Module": "Vì sao email báo đã đọc dù chưa đọc - v6",
-    "Mô Tả": "Trên điện thoại có phần báo noti, và nếu để có đọc trước thì khi noti báo mail tới dthoai trên hệ thống sẽ tự đọc luôn.\nTrường hợp kiểm tra là khi chưa vào đọc noti trên dthoai"
+    "Version": "6.0 + 4.0",
+    "Tên": "Vì sao email bên đối tác gửi đi thành công nhưng bên mình thì lại hiển thị thất bại?",
+    "Module": "Email Marketing",
+    "Mô Tả": "- Link công việc liên quan: https: //1.getfly.vn/#/tasks/?task_id=300007\n- Bên mình đã gửi thông tin mail về bên đối tác nhưng API đối tác quá tgian phản hồi bên mình nên mình chuyển về thất bại, sau đó 1 khoảng 1 thời gian bên đối tác vẫn gửi mail đó đi thành công thì không cập nhật lại thông tin sang bên mình nữa",
+    "Giải Pháp": ""
   },
   {
     "ID": 44,
     "Loại": "Note",
-    "Module": "Gsuit",
-    "Mô Tả": "Vì sao khi chọn gửi là mail cá nhân nhưng nhận được là mail hệ thống? \n Nguyên nhân vì Gsuit quy định mail gửi là mail nào thì gửi mail đó, Getfly không quy định. \n https://1.getfly.vn/#/tasks/?task_id=285066\n\nVì sao email bên đối tác gửi đi thành công nhưng bên mình thì lại hiển thị thất bại\nhttps://1.getfly.vn/#/tasks/?task_id=300007 \n \n Bên mình đã gửi thông tin mail về bên đối tác nhưng API đối tác quá tgian phản hồi bên mình nên mình chuyển về thất bại, sau đó 1 khoảng 1 thời gian bên đối tác vẫn gửi mail đó đi thành công thì không cập nhật lại thông tin sang bên mình nữa\n\nVì sao tích hợp mail Gsuite báo không kết nối được với máy chủ\nThông tin tích hợp đã đúng nhưng kết nối không thành công + kiểm tra cấu hình hoặc gửi email báo thất bại \n Các công việc đã hướng dẫn cách xử lý: \n Báo không kết nối được đến máy chủ: \n \n \n https://1.getfly.vn/#/tasks/?task_id=231396 \n \n \n https://1.getfly.vn/#/tasks/?task_id=304474 \n \n \n Các bài hướng dẫn liên quan tới tích hợp email: \n \n \n https://wiki.getfly.vn/portal/post/1799 \n \n \n https://wiki.getfly.vn/portal/post/1482 \n \n \n Hướn dẫn kết nối email 6.0 https://wiki.getfly.vn/portal/post/2275"
+    "Version": "6.0 + 4.0",
+    "Tên": "Vì sao tích hợp mail Gsuite báo không kết nối được với máy chủ?",
+    "Module": "Email Marketing",
+    "Mô Tả": "- Thông tin tích hợp đã đúng nhưng kết nối không thành công + kiểm tra cấu hình hoặc gửi email báo thất bại\n- Báo không kết nối được đến máy chủ: \n+ https: //1.getfly.vn/#/tasks/?task_id=231396\n+ https: //1.getfly.vn/#/tasks/?task_id=304474\n- Các bài hướng dẫn liên quan tới tích hợp email: \n+ https: //wiki.getfly.vn/portal/post/1799\n+ https: //wiki.getfly.vn/portal/post/1482\n- Hướng dẫn kết nối email 6.0 https: //wiki.getfly.vn/portal/post/2275",
+    "Giải Pháp": ""
+  },
+  {
+    "ID": 45,
+    "Loại": "Note",
+    "Version": "6.0 + 4.0",
+    "Tên": "Vì sao truy cập chi tiết khách hàng từ màn hình đơn hàng hệ thống lại báo lỗi không được phân quyền?",
+    "Module": "Khách hàng",
+    "Mô Tả": "Nguyên nhân có thể gặp\n- Không được liên quan trong khách hàng.\n- Khách hàng bị xóa hẳn.\n- Không có quyền xem mối quan hệ mà khách hàng này đang được thiết lập. (nếu hệ thống mở bảo mật theo mối quan hệ)\n- Không có quyền xem khách hàng của phòng ban trực thuộc (nếu là trưởng phòng của phòng ban cha)",
+    "Giải Pháp": ""
   },
   {
     "ID": 46,
-    "Loại": "Note",
-    "Module": "Các câu hỏi về khách hàng",
-    "Mô Tả": "Vì sao truy cập chi tiết khách hàng từ màn hình đơn hàng hệ thống lại báo lỗi không được phân quyền\n1. Không được liên quan trong khách hàng. \n\n 2. Khách hàng bị xóa hẳn. \n\n 3. Không có quyền xem mối quan hệ mà khách hàng này đang được thiết lập. (nếu hệ thống mở bảo mật theo mối quan hệ) \n\n \n\n \n\n   \n\n \n\n \n\n 4. Không có quyền xem khách hàng của phòng ban trực thuộc (nếu là trưởng phòng của phòng ban cha)"
+    "Loại": "Loigc",
+    "Version": "6.0 + 4.0",
+    "Tên": "Logic check trùng khi upload khách hàng",
+    "Module": "Khách hàng",
+    "Mô Tả": "Logic check trùng khi upload khách hàng sẽ xảy ra 2 trường hợp:\nTH1: Nếu xóa liên hệ, xóa khách hàng ===> Sẽ check trùng với mục đã xóa\nTH2: Nếu xóa khách hàng, liên hệ chưa bị xóa ====> Sẽ không check trùng với mục đã xóa",
+    "Giải Pháp": ""
   },
   {
     "ID": 47,
-    "Loại": "Note",
-    "Module": "Logic check trùng khi upload khách hàng",
-    "Mô Tả": "Logic check trùng khi upload khách hàng sẽ xảy ra 2 trường hợp:  \n\n TH1 : Nếu xóa liên hệ, xóa khách hàng ===> Sẽ check trùng với mục đã xóa  \n\n TH2 : Nếu xóa khách hàng, liên hệ chưa bị xóa ====> Sẽ không check trùng với mục đã xóa \n\nVì sao khi xóa 1 option trong trường bất kỳ tại định nghĩa dữ liệu nhưng vẫn thao tác ở màn hình danh sách khách hàng F2 vẫn có thể xem và chọn option đã xóa và được cập nhật vào thông tin kh\n  \n\n Vì nó chung dữ liệu nên ở phần lựa chọn sửa tại danh sách KH nó sẽ hiển thị giống của phần bộ lọc tìm kiếm nâng cao và vẫn cho phép chọn giá trị đã xóa và lưu thông tin."
+    "Loại": "Logic",
+    "Version": "6.0 + 4.0",
+    "Tên": "Liên hệ lần cuối giá trị âm",
+    "Module": "Khách hàng",
+    "Mô Tả": "Nguyên nhân có thể gặp\nKhách hàng tạo công việc có thời gian bắt đầu từ tương lại . Loại công việc \" Lịch hẹn\", và đã hoàn thành công việc.",
+    "Giải Pháp": ""
+  },
+  {
+    "ID": 48,
+    "Loại": "Logic",
+    "Version": "",
+    "Tên": "Quy tắc tính giới hạn nguồn khách hàng, nhóm khách hàng",
+    "Module": "Khách hàng",
+    "Mô Tả": "Link Công việc liên quan: https: //1.getfly.vn/#/tasks/?task_id=237103",
+    "Giải Pháp": ""
   },
   {
     "ID": 49,
     "Loại": "Note",
-    "Module": "Nguyên nhân :",
-    "Mô Tả": "Khách hàng tạo công việc có thời gian bắt đầu từ tương lại . Loại công việc \" Lịch hẹn\" , và đã hoàn thành công việc  \n\n ===> Liên hệ lần cuối khách hàng sẽ hiển thị số âm \n\nQuy tắc tính giới hạn nguồn khách hàng, nhóm khách hàng\nhttps://1.getfly.vn/#/tasks/?task_id=237103 \n\n  \n\nVì sao tải về khách hàng ghi nhận cột tên khách bị trống\nTải xuống khách hàng có những dòng thông tin cột tên khách hàng bị trống dù các thông tin khác vẫn có \n \n Nguyên nhân: khách hàng có nhiều liên hệ thì sẽ tải xuống ghi nhận mỗi 1 dòng là thông tin liên hệ đi kèm \n Ảnh tải xuống:"
+    "Version": "6.0 + 4.0",
+    "Tên": "Vì sao tải về khách hàng ghi nhận cột tên khách bị trống?",
+    "Module": "Khách hàng",
+    "Mô Tả": "Nguyên nhân có thể gặp\n- khách hàng có nhiều liên hệ thì sẽ tải xuống ghi nhận mỗi 1 dòng là thông tin liên hệ.",
+    "Giải Pháp": ""
   },
   {
     "ID": 50,
-    "Loại": "Note",
-    "Module": "Không tìm kiếm được tên/số điện thoại khách hàng",
-    "Mô Tả": "Báo KH sửa lại tên KH rồi nhập lại xem có được không -> nếu ĐƯỢC => Do bộ gõ \n \n \n Kiểm tra xem KH có bật bảo mật MQH KH hay không? \n => Nếu BẬT thì vẫn thấy danh sách các KH đó nhưng khi tìm kiếm trong bộ lọc sẽ không thấy \n => Nếu KHÔNG -> Báo dev xử lý => Nguyên nhân do server lỗi. Không có cách giải quyết triệt để, KH nào bị thì sửa KH đó \n \n \n Những công việc liên quan đến lỗi này đã được giải quyết: \n https://1.getfly.vn/#/tasks/?task_id=304567 \n https://1.getfly.vn/#/tasks/?task_id=303907 \n https://1.getfly.vn/#/tasks/?task_id=303113 \n https://1.getfly.vn/#/tasks/?task_id=302119"
+    "Loại": "Issue",
+    "Version": "6.0 + 4.0",
+    "Tên": "Không tìm kiếm được tên/số điện thoại khách hàng",
+    "Module": "Khách hàng",
+    "Mô Tả": "Các bước thực hiện\n- Báo KH sửa lại tên KH rồi nhập lại xem có được không -> nếu ĐƯỢC => Do bộ gõ\n- Kiểm tra xem KH có bật bảo mật MQH KH hay không?\n+ Nếu BẬT thì vẫn thấy danh sách các KH đó nhưng khi tìm kiếm trong bộ lọc sẽ không thấy\n+ Nếu KHÔNG -> Báo dev xử lý => Nguyên nhân do server lỗi. Không có cách giải quyết triệt để, KH nào bị thì sửa KH đó",
+    "Giải Pháp": "Những công việc liên quan đến lỗi này đã được giải quyết:\n- https: //1.getfly.vn/#/tasks/?task_id=304567\n- https: //1.getfly.vn/#/tasks/?task_id=303907\n- https: //1.getfly.vn/#/tasks/?task_id=303113\n- https: //1.getfly.vn/#/tasks/?task_id=302119"
   },
   {
     "ID": 52,
     "Loại": "Note",
+    "Version": "",
+    "Tên": "",
     "Module": "Thông tin kết nối bên vận chuyển",
-    "Mô Tả": "Các bên vận chuyển có trả trạng thái vận đơn về không? Cần làm gì để ghi nhận\n- Hiện tại các bên vận chuyển đều có tính năng trả trạng thái đơn hàng về với Getfly. \n\n - Để ghi nhận cần báo bên vận chuyển tích hợp webhook của Getfly theo cú pháp: https://{{domain}}/webhook/tên bên vận chuyển/order_status. \n\n - Ví dụ: khách hàng dùng viettel post, có domain là https://ycdi.getflycrm.com : https://ycdi.getflycrm.com/webhook/viettelpost/order_status \n\n  \n\nVì sao khi tôi click vào mã vận đơn hệ thống không link sang đúng đơn bên vận chuyển\n- Cần kiểm tra lại xem hệ thống bên vận chuyên có thay đổi link ghi nhận trạng thái vận đơn không.  \n\n - Nếu bên vận chuyển có thay đổi -> báo cskh xin thông tin thay đổi -> tạo lại công việc cho dev để cập nhật bổ sung\n\nVì sao tôi dùng vận chuyển ahamove lại không hiển thị giá trị đơn hàng bên trang vận chuyển?\nHiện tại bên Ahamove không heienr thị phần giá trị đơn hàng bên mình đẩy sang nên trên trang của họ sẽ không hiển thị\n\nVì sao khi tôi sửa lại đơn hàng -> tạo mã vận đơn lại không được?\nĐơn hàng chỉ ghi nhận mã vận đơn và đẩy sang bên vận chuyển khi tạo mới một đơn hàng + tạo vận đơn trước khi lưu đơn hàng. \n\n Nếu như tạo mới thành công một đơn hàng rồi vào sửa, cập nhật thông tin vận đơn thì hệ thống sẽ không ghi nhận vận đơn này và cũng không đẩy được thông tin sang bên vận chuyển"
+    "Mô Tả": "Các bên vận chuyển có trả trạng thái vận đơn về không? Cần làm gì để ghi nhận\n- Hiện tại các bên vận chuyển đều có tính năng trả trạng thái đơn hàng về với Getfly.\n- Để ghi nhận cần báo bên vận chuyển tích hợp webhook của Getfly theo cú pháp: https://{{domain}}/webhook/tên bên vận chuyển/order_status.\n- Ví dụ: khách hàng dùng viettel post, có domain là https://ycdi.getflycrm.com : https://ycdi.getflycrm.com/webhook/viettelpost/order_status\nVì sao khi tôi click vào mã vận đơn hệ thống không link sang đúng đơn bên vận chuyển\n- Cần kiểm tra lại xem hệ thống bên vận chuyên có thay đổi link ghi nhận trạng thái vận đơn không.\n- Nếu bên vận chuyển có thay đổi -> báo cskh xin thông tin thay đổi -> tạo lại công việc cho dev để cập nhật bổ sung\nVì sao tôi dùng vận chuyển ahamove lại không hiển thị giá trị đơn hàng bên trang vận chuyển?\nHiện tại bên Ahamove không heienr thị phần giá trị đơn hàng bên mình đẩy sang nên trên trang của họ sẽ không hiển thị\nVì sao khi tôi sửa lại đơn hàng -> tạo mã vận đơn lại không được?\nĐơn hàng chỉ ghi nhận mã vận đơn và đẩy sang bên vận chuyển khi tạo mới một đơn hàng + tạo vận đơn trước khi lưu đơn hàng.\nNếu như tạo mới thành công một đơn hàng rồi vào sửa, cập nhật thông tin vận đơn thì hệ thống sẽ không ghi nhận vận đơn này và cũng không đẩy được thông tin sang bên vận chuyển",
+    "Giải Pháp": ""
   },
   {
     "ID": 56,
     "Loại": "Note",
+    "Version": "",
+    "Tên": "",
     "Module": "Vì sao tôi không tìm được phiếu KPI của tháng trước",
-    "Mô Tả": "1. Không tìm kiếm theo Đã hết hạn. \n\n 2. Phiếu KPI bị xóa. \n\n 3. Không được quyền xem phiếu."
+    "Mô Tả": "1. Không tìm kiếm theo Đã hết hạn.\n2. Phiếu KPI bị xóa.\n3. Không được quyền xem phiếu.",
+    "Giải Pháp": ""
   },
   {
     "ID": 57,
     "Loại": "Note",
+    "Version": "",
+    "Tên": "",
     "Module": "Logic chỉ tiêu KPI chặn trên và chặn dưới",
-    "Mô Tả": "Bài toán : Phiếu KPI này chỉ có 1 chỉ tiêu, Dạng chỉ tiêu là tự nhập, tên chỉ tiêu là Số lần đi muộn.  Dạng chỉ tiêu tốt  theo chiều hướng tăng, chặn trên là 100, chặn dưới là 0.  Con số giao chỉ tiêu là 3 . Khi chị nhập con số thực tế là 1 thì phần % KPI  ở  \n\n Đáp án :  \n\n - Với trường hợp chặn dưới là 0 % thì  :  Thì %kpi  min = 0% . Khi tính ra được % KPI thì sẽ so sánh với chặn dưới . Nếu  nhỏ hơn chặn dưới thì sẽ lấy % KPI bằng chặn dưới  \n\n ( Thì trường hợp ở bài toán khi nhập con số thực tế bằng 1 > 0 thì kpi KPI ở mức 33,33% là đang đúng \n\n VD: Trường hợp  nhập thực tế  - 9 -10 < 0 thì % chỉ tiêu KPI cũng sẽ ở mức chặn dưới 0% )  \n\n - Với trường hợp chặn trên thì chỉ tiêu > chỉ tiêu đã thiết lập thì max %KPI cũng sẽ chỉ ở mức 100% ( so với điều kiện thiết lập )"
+    "Mô Tả": "Bài toán : Phiếu KPI này chỉ có 1 chỉ tiêu, Dạng chỉ tiêu là tự nhập, tên chỉ tiêu là Số lần đi muộn.  Dạng chỉ tiêu tốt  theo chiều hướng tăng, chặn trên là 100, chặn dưới là 0.  Con số giao chỉ tiêu là 3 . Khi chị nhập con số thực tế là 1 thì phần % KPI  ở\nĐáp án: \n- Với trường hợp chặn dưới là 0 % thì: Thì %kpi  min = 0% . Khi tính ra được % KPI thì sẽ so sánh với chặn dưới . Nếu  nhỏ hơn chặn dưới thì sẽ lấy % KPI bằng chặn dưới\n( Thì trường hợp ở bài toán khi nhập con số thực tế bằng 1 > 0 thì kpi KPI ở mức 33,33% là đang đúng\nVD: Trường hợp  nhập thực tế  - 9 -10 < 0 thì % chỉ tiêu KPI cũng sẽ ở mức chặn dưới 0% )\n- Với trường hợp chặn trên thì chỉ tiêu > chỉ tiêu đã thiết lập thì max %KPI cũng sẽ chỉ ở mức 100% ( so với điều kiện thiết lập )",
+    "Giải Pháp": ""
   },
   {
     "ID": 59,
     "Loại": "Note",
+    "Version": "",
+    "Tên": "",
     "Module": "Logic khi thêm khách hàng mục tiêu vào chiến dịch",
-    "Mô Tả": "- Khi thêm khách hàng mục tiêu vào chiến dịch sẽ hoạt động khi: Khi đơn hàng được tạo trước khi cập nhật hoặc thêm mới chiến dịch . Sản phẩm và đơn giá  phải trùng khớp với đơn giá ở đơn hàng  \n\n - Khi thêm khách hàng mục tiêu vào chiến dịch sẽ không hoạt động khi: Khi sửa chiến dịch trước khi tạo đơn hàng ==> hệ thống sẽ không ghi nhận được cơ hội vào chiến dịch"
+    "Mô Tả": "- Khi thêm khách hàng mục tiêu vào chiến dịch sẽ hoạt động khi: Khi đơn hàng được tạo trước khi cập nhật hoặc thêm mới chiến dịch . Sản phẩm và đơn giá  phải trùng khớp với đơn giá ở đơn hàng\n- Khi thêm khách hàng mục tiêu vào chiến dịch sẽ không hoạt động khi: Khi sửa chiến dịch trước khi tạo đơn hàng ==> hệ thống sẽ không ghi nhận được cơ hội vào chiến dịch",
+    "Giải Pháp": ""
   },
   {
     "ID": 60,
     "Loại": "Note",
+    "Version": "",
+    "Tên": "",
     "Module": "Logic tự động phân chia lần lượt",
-    "Mô Tả": "1. Chỉ áp dụng cho các cơ hội chưa có người phụ trách  \n\n 2. Phân chia lần lượt từ lâu nhất cho đến mới nhất. Dựa theo thời gian tạo tài khoản nhân viên \n\n 3. Chia theo vòng:  \n\n - Vòng 1: nhân viên A, B, C được chia, đến D hết.  \n\n - Vọng 2: tiếp tục chia bắt đầu từ D quay trở về A, B,.. \n\n - Vòng 3: quy luật chia như ở vòng 2: trước đó dừng ở ai thì sẽ chia bắt đầu từ nhân viên đó ở vòng kế tiếp."
+    "Mô Tả": "1. Chỉ áp dụng cho các cơ hội chưa có người phụ trách\n2. Phân chia lần lượt từ lâu nhất cho đến mới nhất. Dựa theo thời gian tạo tài khoản nhân viên\n3. Chia theo vòng: \n- Vòng 1: nhân viên A, B, C được chia, đến D hết.\n- Vọng 2: tiếp tục chia bắt đầu từ D quay trở về A, B,..\n- Vòng 3: quy luật chia như ở vòng 2: trước đó dừng ở ai thì sẽ chia bắt đầu từ nhân viên đó ở vòng kế tiếp.",
+    "Giải Pháp": ""
   },
   {
     "ID": 62,
     "Loại": "Note",
+    "Version": "",
+    "Tên": "",
     "Module": "Giới hạn hiển thị bình luận trên page",
-    "Mô Tả": "1. Phần bình luận bên mình để giới hạn comment chứ không phải giới hạn theo ngày, cái này bên mình giới hạn từ trước rồi. \n\n Giới hạn hiển thị 100 comment trong 50 bài post. \n\n 2. Trường hợp click đăng nhập vào facebook hiển thị màn hình trắng là do : Domain này chưa cho phép đăng nhập vào fb - Có 2 cách xử lý : \n\n \n\n \n\n Cách 1: Báo Kh sử dụng domain gốc để đăng nhập vào facebook \n\n Cách 2: Hoặc bên mình phải add domain kia  ( domain không đăng nhập được ) vào app của Fb thì mới có thể đăng nhập vào được facebook"
+    "Mô Tả": "1. Phần bình luận bên mình để giới hạn comment chứ không phải giới hạn theo ngày, cái này bên mình giới hạn từ trước rồi.\nGiới hạn hiển thị 100 comment trong 50 bài post.\n2. Trường hợp click đăng nhập vào facebook hiển thị màn hình trắng là do: Domain này chưa cho phép đăng nhập vào fb - Có 2 cách xử lý :\nCách 1: Báo Kh sử dụng domain gốc để đăng nhập vào facebook\nCách 2: Hoặc bên mình phải add domain kia  ( domain không đăng nhập được ) vào app của Fb thì mới có thể đăng nhập vào được facebook",
+    "Giải Pháp": ""
   },
   {
     "ID": 63,
     "Loại": "Note",
+    "Version": "",
+    "Tên": "",
     "Module": "Logic load comment từ Facebook",
-    "Mô Tả": "Phần này cần gọi API của Facebook để tìm ra đoạn chat rồi mới lấy được ra chi tiết, mỗi lần gọi API của Facebook bên mình sẽ lấy ra 1 số lượng bản ghi nhất định để tìm, nếu không tìm thấy sẽ gọi tiếp API lấy danh sách, nên tốc độ load này phụ thuộc vào số lần gọi API lấy danh sách của Facebook (đoạn chat càng xa thì sẽ load càng lâu).\n\nkhông trả lời được vì quá 24h"
+    "Mô Tả": "Phần này cần gọi API của Facebook để tìm ra đoạn chat rồi mới lấy được ra chi tiết, mỗi lần gọi API của Facebook bên mình sẽ lấy ra 1 số lượng bản ghi nhất định để tìm, nếu không tìm thấy sẽ gọi tiếp API lấy danh sách, nên tốc độ load này phụ thuộc vào số lần gọi API lấy danh sách của Facebook (đoạn chat càng xa thì sẽ load càng lâu).\nkhông trả lời được vì quá 24h",
+    "Giải Pháp": ""
   },
   {
     "ID": 65,
     "Loại": "Note",
+    "Version": "",
+    "Tên": "",
     "Module": "Các công việc liên quan đên vấn đề này:",
-    "Mô Tả": "4.0 https://1.getfly.vn/#/tasks/?task_id=252269 \n 6.0\n \n https://1.getfly.vn/#/tasks/?task_id=275042 \n https://1.getfly.vn/#/tasks/?task_id=296402 \n \n \n Lỗi từ phía FB nên không xử lý được, nằm ngoài phạm vi xử lý của hệ thống"
+    "Mô Tả": "4.0 https://1.getfly.vn/#/tasks/?task_id=252269\n6.0\nhttps: //1.getfly.vn/#/tasks/?task_id=275042\nhttps: //1.getfly.vn/#/tasks/?task_id=296402\nLỗi từ phía FB nên không xử lý được, nằm ngoài phạm vi xử lý của hệ thống",
+    "Giải Pháp": ""
   },
   {
     "ID": 66,
     "Loại": "Note",
+    "Version": "",
+    "Tên": "",
     "Module": "HRM",
-    "Mô Tả": "Logic tính bảo hiểm xã hội bắt buộc trong bảng lương\nTrường bảo hiểm xã hội bắt buộc trong bảng lương gồm 3 yêu tố: \n\n 1. Cột Mức lương cơ bản \n\n - Được tính dựa trên dữ liệu mức lương cơ bản = bậc lương ghi nhận trong hợp đồng nhân sự \n\n Nếu hợp đồng nhân sự thay đổi mức lương và bậc lương thì BHXH trong bảng lương cũng thay đổi theo \n\n - Logic hệ thống: Trong hợp đồng nhân sự: mức lương cơ bản = bậc lương  \n\n - Mức lương cơ bản này không phụ thuộc vào giá trị mức lương đóng bảo hiểm trong tính năng Bảo hiểm ở HRM \n\n 2. Cột Doanh nghiệp đóng: \n\n - Tỷ lệ % này được thiết lập trong cài đặt Mức bảo hiểm doanh nghiệp phải đóng  \n\n 3. Cột Người lao động đóng: \n\n - Tỷ lệ % này được thiết lập trong cài đặt Mức bảo hiểm người lao động phải đóng \n\nLogic thiết lập chấm công theo ca - Bảng chấm công cá nhân"
+    "Mô Tả": "Logic tính bảo hiểm xã hội bắt buộc trong bảng lương\nTrường bảo hiểm xã hội bắt buộc trong bảng lương gồm 3 yêu tố: \n1. Cột Mức lương cơ bản\n- Được tính dựa trên dữ liệu mức lương cơ bản = bậc lương ghi nhận trong hợp đồng nhân sự\nNếu hợp đồng nhân sự thay đổi mức lương và bậc lương thì BHXH trong bảng lương cũng thay đổi theo\n- Logic hệ thống: Trong hợp đồng nhân sự: mức lương cơ bản = bậc lương\n- Mức lương cơ bản này không phụ thuộc vào giá trị mức lương đóng bảo hiểm trong tính năng Bảo hiểm ở HRM\n2. Cột Doanh nghiệp đóng: \n- Tỷ lệ % này được thiết lập trong cài đặt Mức bảo hiểm doanh nghiệp phải đóng\n3. Cột Người lao động đóng: \n- Tỷ lệ % này được thiết lập trong cài đặt Mức bảo hiểm người lao động phải đóng\nLogic thiết lập chấm công theo ca - Bảng chấm công cá nhân",
+    "Giải Pháp": ""
   },
   {
     "ID": 67,
     "Loại": "Note",
+    "Version": "",
+    "Tên": "",
     "Module": "Thiết lập chọn chấm công theo giải pháp của Getfly",
-    "Mô Tả": "Thiết lập ca chấm công \n\n Thiết lập chấm công theo ca.    => Sau khi thiết lập xong các bước này sẽ hiển thị nút chấm công trong bảng chấm công cá nhân"
+    "Mô Tả": "Thiết lập ca chấm công\nThiết lập chấm công theo ca.    => Sau khi thiết lập xong các bước này sẽ hiển thị nút chấm công trong bảng chấm công cá nhân",
+    "Giải Pháp": ""
   },
   {
     "ID": 68,
     "Loại": "Note",
+    "Version": "",
+    "Tên": "",
     "Module": "Landing Page",
-    "Mô Tả": "Form có footer + optin form chứa trường select list nhiều lựa chọn thì không hiển thị"
+    "Mô Tả": "Form có footer + optin form chứa trường select list nhiều lựa chọn thì không hiển thị",
+    "Giải Pháp": ""
   },
   {
     "ID": 69,
     "Loại": "Note",
+    "Version": "",
+    "Tên": "",
     "Module": "Cách xử lý:",
-    "Mô Tả": "Vào chỉnh height trong form  \n\n Vào cài đặt landing page -> vào chỉnh sửa code trong html -> thêm height + 300 vào cuối  \n\n \n\n \n\n Sau đó ấn lại vào dấu <> rồi ấn cập nhật"
+    "Mô Tả": "Vào chỉnh height trong form\nVào cài đặt landing page -> vào chỉnh sửa code trong html -> thêm height + 300 vào cuối\nSau đó ấn lại vào dấu <> rồi ấn cập nhật",
+    "Giải Pháp": ""
   },
   {
     "ID": 71,
     "Loại": "Note",
+    "Version": "",
+    "Tên": "",
     "Module": "Xóa đơn hàng có xóa thông tin thanh toán không",
-    "Mô Tả": "Hiện tại khi xóa đơn hàng đều sẽ xóa thông tin thanh toán trong ô thông tin thanh toán. Phiếu thu sẽ vẫn còn"
+    "Mô Tả": "Hiện tại khi xóa đơn hàng đều sẽ xóa thông tin thanh toán trong ô thông tin thanh toán. Phiếu thu sẽ vẫn còn",
+    "Giải Pháp": ""
   },
   {
     "ID": 72,
     "Loại": "Note",
+    "Version": "",
+    "Tên": "",
     "Module": "Công thức tính liên quan đến đơn hàng",
-    "Mô Tả": "Cột lợi nhuận đơn hàng được tính như sau: Lợi nhuận đơn hàng bằng tổng lợi nhuận sản phẩm 1. Trường hợp Khách hàng có sử dụng Module Kho: Lợi nhuận đơn hàng = Số lượng x Giá bán - Chiết khấu sản phẩm - Chiết khấu đơn hàng + Chi phí lắp đặt (nếu có) - Số lượng x Giá vốn xuất kho (tương ứng với sản phẩm Xuất kho tính cả sản phẩm quà tặng) - Số lượng x Giá nhập tương ứng với sp dịch vụ được điền trong chi tiết đơn hàng (áp dụng với đơn hàng có chứa sản phẩm dịch vụ) \n\n Phần này sẽ không mở mặc định ô giá nhập trong chi tiết đơn hàng chỉ mở khi khách hàng có nhu cầu tính cả lợi nhuận liên quan đến sản phẩm dịch vụ. Trường hợp đơn hàng có sản phẩm dịch vụ mà không mở ô giá nhập thì giá nhập của sản phẩm dịch vụ được tính mặc định = 0. \n\n 2. Trường hợp KH không sử dụng Module Kho và mở ô giá nhập trong chi tiết đơn hàng Lợi nhuân đơn hàng = Số lượng x Giá bán - Chiết khấu sản phẩm - Chiết khấu đơn hàng + Chi phí lắp đặt (nếu có) - Số lượng x Giá nhập (Giá nhập tương ứng với sản phẩm được điền trong chi tiết đơn hàng đó)"
+    "Mô Tả": "Cột lợi nhuận đơn hàng được tính như sau: Lợi nhuận đơn hàng bằng tổng lợi nhuận sản phẩm 1. Trường hợp Khách hàng có sử dụng Module Kho: Lợi nhuận đơn hàng = Số lượng x Giá bán - Chiết khấu sản phẩm - Chiết khấu đơn hàng + Chi phí lắp đặt (nếu có) - Số lượng x Giá vốn xuất kho (tương ứng với sản phẩm Xuất kho tính cả sản phẩm quà tặng) - Số lượng x Giá nhập tương ứng với sp dịch vụ được điền trong chi tiết đơn hàng (áp dụng với đơn hàng có chứa sản phẩm dịch vụ)\nPhần này sẽ không mở mặc định ô giá nhập trong chi tiết đơn hàng chỉ mở khi khách hàng có nhu cầu tính cả lợi nhuận liên quan đến sản phẩm dịch vụ. Trường hợp đơn hàng có sản phẩm dịch vụ mà không mở ô giá nhập thì giá nhập của sản phẩm dịch vụ được tính mặc định = 0.\n2. Trường hợp KH không sử dụng Module Kho và mở ô giá nhập trong chi tiết đơn hàng Lợi nhuân đơn hàng = Số lượng x Giá bán - Chiết khấu sản phẩm - Chiết khấu đơn hàng + Chi phí lắp đặt (nếu có) - Số lượng x Giá nhập (Giá nhập tương ứng với sản phẩm được điền trong chi tiết đơn hàng đó)",
+    "Giải Pháp": ""
   },
   {
     "ID": 74,
     "Loại": "Note",
+    "Version": "",
+    "Tên": "",
     "Module": "Link wiki: https://wiki.getfly.vn/portal/post/1979",
-    "Mô Tả": "Hệ thống có sử dụng module Kho"
+    "Mô Tả": "Hệ thống có sử dụng module Kho",
+    "Giải Pháp": ""
   },
   {
     "ID": 75,
     "Loại": "Note",
+    "Version": "",
+    "Tên": "",
     "Module": "Công thức:",
-    "Mô Tả": "Lợi nhuận đơn hàng = Số lượng x Giá bán - Chiết khấu sản phẩm - Chiết khấu đơn hàng + Chi phí lắp đặt (nếu có) - Số lượng x Giá vốn xuất kho (tương ứng với sản phẩm Xuất kho tính cả sản phẩm quà tặng) - Số lượng x Giá nhập tương ứng với sản phẩm dịch vụ được điền trong chi tiết đơn hàng (áp dụng với đơn hàng có chứa sản phẩm dịch vụ) \n \n \n Giá vốn xuất kho được tính theo công thức sau\nGiá vốn xuất kho = (Tồn đầu kỳ x giá nhập kho đầu kỳ + Số lượng nhập kho trong kỳ x giá nhập kho trong kỳ)/ ( Tồn đầu kỳ + Số lượng nhập kho trong kỳ) \n \n \n LƯU Ý: \n \n Giá vốn xuất kho sẽ lấy theo kỳ tại thời điểm xuất kho Ví dụ: đơn hàng xuất kho tháng 2 thì giá vốn xuất kho sẽ lấy giá vốn xuất kho của tháng 2 \n \n \n Hệ thống không sử dụng Module Kho \n \n Trường hợp khách hàng không dùng module kho để hệ thống có thể tính lợi nhuận thì cần mở cột giá nhập trên đơn hàng cho hệ thống \n \n Công thức: \n \n Lợi nhuận đơn hàng = (Số lượng x Giá bán) - Chiết khấu sản phẩm - Chiết khấu đơn hàng + Chi phí lắp đặt (nếu có) - (Số lượng x Giá nhập)"
+    "Mô Tả": "Lợi nhuận đơn hàng = Số lượng x Giá bán - Chiết khấu sản phẩm - Chiết khấu đơn hàng + Chi phí lắp đặt (nếu có) - Số lượng x Giá vốn xuất kho (tương ứng với sản phẩm Xuất kho tính cả sản phẩm quà tặng) - Số lượng x Giá nhập tương ứng với sản phẩm dịch vụ được điền trong chi tiết đơn hàng (áp dụng với đơn hàng có chứa sản phẩm dịch vụ)\nGiá vốn xuất kho được tính theo công thức sau\nGiá vốn xuất kho = (Tồn đầu kỳ x giá nhập kho đầu kỳ + Số lượng nhập kho trong kỳ x giá nhập kho trong kỳ)/ ( Tồn đầu kỳ + Số lượng nhập kho trong kỳ)\nLƯU Ý: \nGiá vốn xuất kho sẽ lấy theo kỳ tại thời điểm xuất kho Ví dụ: đơn hàng xuất kho tháng 2 thì giá vốn xuất kho sẽ lấy giá vốn xuất kho của tháng 2\nHệ thống không sử dụng Module Kho\nTrường hợp khách hàng không dùng module kho để hệ thống có thể tính lợi nhuận thì cần mở cột giá nhập trên đơn hàng cho hệ thống\nCông thức: \nLợi nhuận đơn hàng = (Số lượng x Giá bán) - Chiết khấu sản phẩm - Chiết khấu đơn hàng + Chi phí lắp đặt (nếu có) - (Số lượng x Giá nhập)",
+    "Giải Pháp": ""
   },
   {
     "ID": 76,
     "Loại": "Note",
+    "Version": "",
+    "Tên": "",
     "Module": "Kết nối với đối tác ecount",
-    "Mô Tả": "Công việc: https://1.getfly.vn/#/tasks/?task_id=293822 \n Tích hợp với ecount đẩy thông tin đơn hàng, sản phẩm, khách hàng về CRM \n Lưu ý: chỉ đẩy thông tin khi tạo mới còn nếu có chỉnh sửa thì không đồng bộ sang\n\nLogic hiển thị cảnh báo và Xóa sản phẩm khi thay đổi khách hàng\ncv liên quan: https://1.getfly.vn/#/tasks/?task_id=295269 \n Ảnh dev báo logic: \n \n Đơn hàng đang phát sinh vấn đề: sửa đơn hàng khi thay đổi khách hàng không có cảnh báo xóa sản phẩm nữa mà vẫn giữ nguyên > Logic là khi khách hàng có nằm trong Chính sách giá thì mới hiển thị Confirm Xóa sản phẩm\n\nĐơn hàng đã xuất kho + đã hoàn thành upload ghi đè sẽ bỏ qua\nLink cv: https://1.getfly.vn/#/tasks/?task_id=298435"
+    "Mô Tả": "Công việc: https://1.getfly.vn/#/tasks/?task_id=293822\nTích hợp với ecount đẩy thông tin đơn hàng, sản phẩm, khách hàng về CRM\nLưu ý: chỉ đẩy thông tin khi tạo mới còn nếu có chỉnh sửa thì không đồng bộ sang\nLogic hiển thị cảnh báo và Xóa sản phẩm khi thay đổi khách hàng\ncv liên quan: https://1.getfly.vn/#/tasks/?task_id=295269\nẢnh dev báo logic: \nĐơn hàng đang phát sinh vấn đề: sửa đơn hàng khi thay đổi khách hàng không có cảnh báo xóa sản phẩm nữa mà vẫn giữ nguyên > Logic là khi khách hàng có nằm trong Chính sách giá thì mới hiển thị Confirm Xóa sản phẩm\nĐơn hàng đã xuất kho + đã hoàn thành upload ghi đè sẽ bỏ qua\nLink cv: https://1.getfly.vn/#/tasks/?task_id=298435",
+    "Giải Pháp": ""
   },
   {
     "ID": 77,
     "Loại": "Note",
+    "Version": "",
+    "Tên": "",
     "Module": "Zalo",
-    "Mô Tả": "Khách hàng vừa khai báo thêm 1 số mẫu tem ZNS, nhưng khi xem trên Getfly thì chỉ hiện các mẫu tem trước đấy ( không hiện các mẫu mới khai báo) \n\n Hướng giải quyết:  \n\n - Thao tác gỡ OA và gỡ ZnS tích hợp lại \n\n - Danh sách template bên mình lấy là lấy trực tiếp từ bên Zalo (Tất cả những template đã duyệt và đang active). Báo lại với bên CS báo bên đối tác check (Vhat) \n\n - Template ZNS được khai báo trên tài khoản của đối tác, nhưng tài khoản đó được quản lý bởi zalo - ZCA chứ không phải hệ thống quản lý riêng bên đối tác (vihat). Về thông tin ZCA có thể tham khảo \n\n ( https://oa.zalo.me/home/resources/guides/zalo-cloud-account-la-gi_1091611867954365674 )  \n\n Khi Getfly lấy template sẽ theo quy trình Getfly CRM <=> App Getfly <=> ZCA (của đối tác) <=> Zalo ZNS (template) nên mình vẫn đang lấy template trực tiếp từ Zalo ZNS \n\n Nên ở đây nếu Vihat khai báo Template cho khách hàng thì phải khai báo trên tài khoản ZCA của Vihat"
+    "Mô Tả": "Khách hàng vừa khai báo thêm 1 số mẫu tem ZNS, nhưng khi xem trên Getfly thì chỉ hiện các mẫu tem trước đấy ( không hiện các mẫu mới khai báo)\nHướng giải quyết: \n- Thao tác gỡ OA và gỡ ZnS tích hợp lại\n- Danh sách template bên mình lấy là lấy trực tiếp từ bên Zalo (Tất cả những template đã duyệt và đang active). Báo lại với bên CS báo bên đối tác check (Vhat)\n- Template ZNS được khai báo trên tài khoản của đối tác, nhưng tài khoản đó được quản lý bởi zalo - ZCA chứ không phải hệ thống quản lý riêng bên đối tác (vihat). Về thông tin ZCA có thể tham khảo\n( https: //oa.zalo.me/home/resources/guides/zalo-cloud-account-la-gi_1091611867954365674 )\nKhi Getfly lấy template sẽ theo quy trình Getfly CRM <=> App Getfly <=> ZCA (của đối tác) <=> Zalo ZNS (template) nên mình vẫn đang lấy template trực tiếp từ Zalo ZNS\nNên ở đây nếu Vihat khai báo Template cho khách hàng thì phải khai báo trên tài khoản ZCA của Vihat",
+    "Giải Pháp": ""
   },
   {
     "ID": 78,
     "Loại": "Note",
+    "Version": "",
+    "Tên": "",
     "Module": "Lý do khách hàng tự động sinh ra",
-    "Mô Tả": "Nguyên nhân: Có thể là khách hàng sử dụng api hoặc gắn form  thì mới tự sinh ra KH"
+    "Mô Tả": "Nguyên nhân: Có thể là khách hàng sử dụng api hoặc gắn form  thì mới tự sinh ra KH",
+    "Giải Pháp": ""
   },
   {
     "ID": 80,
     "Loại": "Note",
+    "Version": "",
+    "Tên": "",
     "Module": "Ô lần CS trong lịch đi tuyến",
-    "Mô Tả": "1. Ô nhập trên  \n\n \n\n - Ô nhập thông tin ở đây sẽ tự động thêm số lần CS cho các lịch bên dưới mỗi lần thêm khách hàng. \n\n - Ô trên nhập số bao nhiêu thì bên dưới từng lịch sẽ sinh ra bấy nhiêu. \n\n 2. Ô nhập ở từng lịch: \n\n \n\n - Hiển thị con số theo ô nhập Lần CS trên \n\n - Nếu nhập là 0 thì sinh ra vô hạn \n\n - Nhập số lần là X => nếu số lịch thành công = X thì sẽ không sinh ra lịch nữa (lịch thành công = đã chăm sóc)\n\n% HOÀN THÀNH VÀ HÔM NAY ĐƯỢC TÍNH THẾ NÀO\nHôm nay: là các lịch sẽ sinh ra trong hôm nay. Lịch hôm nay sẽ không hiển thị các lịch đã hoàn thành mà lịch đó đạt giới hạn chăm sóc \n % hoàn thành: số lịch check in hôm nay/tổng lịch."
+    "Mô Tả": "1. Ô nhập trên\n- Ô nhập thông tin ở đây sẽ tự động thêm số lần CS cho các lịch bên dưới mỗi lần thêm khách hàng.\n- Ô trên nhập số bao nhiêu thì bên dưới từng lịch sẽ sinh ra bấy nhiêu.\n2. Ô nhập ở từng lịch: \n- Hiển thị con số theo ô nhập Lần CS trên\n- Nếu nhập là 0 thì sinh ra vô hạn\n- Nhập số lần là X => nếu số lịch thành công = X thì sẽ không sinh ra lịch nữa (lịch thành công = đã chăm sóc)\n% HOÀN THÀNH VÀ HÔM NAY ĐƯỢC TÍNH THẾ NÀO\nHôm nay: là các lịch sẽ sinh ra trong hôm nay. Lịch hôm nay sẽ không hiển thị các lịch đã hoàn thành mà lịch đó đạt giới hạn chăm sóc\n% hoàn thành: số lịch check in hôm nay/tổng lịch.",
+    "Giải Pháp": ""
   },
   {
     "ID": 81,
     "Loại": "Note",
+    "Version": "",
+    "Tên": "",
     "Module": "Các câu hỏi về báo cáo KPI",
-    "Mô Tả": "Phân chia doanh thu đang hiển thị thế nào? (Đang viết)"
+    "Mô Tả": "Phân chia doanh thu đang hiển thị thế nào? (Đang viết)",
+    "Giải Pháp": ""
   },
   {
     "ID": 82,
     "Loại": "Note",
+    "Version": "",
+    "Tên": "",
     "Module": "I.",
-    "Mô Tả": "Logic của phân chia doanh thu: \n\n - \n\n Đơn hàng nếu như không phân chia ->Doanh thu được ghi nhận 100% cho nhân viên thực hiện đơn hàng đó. \n\n - \n\n Đơn hàng do A tạo, phân chia cho A -> A nhận được bằng số được chia. \n\n - \n\n Đơn hàng do A tạo, phân chia cho B, cho C,... -> Mỗi người được nhận phần bằng mình đã được chia. \n\n - \n\n Đơn hàng do A tạo, phân chia cho B -> A nhận phần chưa chia của đơn hàng. \n\n II. \n\n Logic hiển thị trên báo cáo phòng ban: \n\n - \n\n A là Giám đốc - thuộc phòng ban cao nhất, B là Trường phòng - thuộc phòng ban con Mua, C là Nhân viên - thuộc phòng ban con Mua, D là Nhân viên – thuộc phòng ban Bán – là con của phòng ban mua. \n\n 1. \n\n Trường hợp người tạo đơn hàng và người phân chia doanh thu khác nhau: \n\n - \n\n C tạo đơn hàng, doanh thu được chia cho A và B. \n\n · \n\n Trong phòng ban của A: hiển thị thông tin tổng doanh thu được chia cho A + B \n\n · \n\n Trong báo cáo phòng ban của B: hiển thị thông tin tổng doanh thu chia cho B. \n\n - \n\n D tạo đơn hàng, doanh thu chia cho D. \n\n · \n\n Trong phòng ban của A: Hiển thị thông tin doanh thu chia cho D. \n\n · \n\n Trong phòng ban của B: Hiển thị thông tin doanh thu chia cho D. \n\n · \n\n Trong phòng ban của B: Hiển thị thông tin doanh thu chia cho D. \n\n - \n\n D tạo đơn hàng, doanh thu chia cho B. \n\n · \n\n Trong phòng ban của A: Hiển thị thông tin doanh thu chia cho B. \n\n · \n\n Trong phòng ban của B: Hiển thị thông tin doanh thu chia cho B. \n\n · \n\n Trong phòng ban của D: Hiển thị thông tin doanh thu còn lại của đơn hàng. \n\n 2. \n\n Trường hợp người tạo đơn hàng và người phân chia doanh thu giống nhau: \n\n - \n\n Doanh thu chia cho ai thì xem phòng ban của người đó sẽ hiển thị đúng thông tin đã chia. \n\n - \n\n Tương tự khi xem báo cáo phòng ban của các phòng ban cha cũng hiển thị đúng số doanh thu chia cho nhân viên đó."
+    "Mô Tả": "Logic của phân chia doanh thu:\n-\nĐơn hàng nếu như không phân chia ->Doanh thu được ghi nhận 100% cho nhân viên thực hiện đơn hàng đó.\n-\nĐơn hàng do A tạo, phân chia cho A -> A nhận được bằng số được chia.\n-\nĐơn hàng do A tạo, phân chia cho B, cho C,... -> Mỗi người được nhận phần bằng mình đã được chia.\n-\nĐơn hàng do A tạo, phân chia cho B -> A nhận phần chưa chia của đơn hàng.\nII.\nLogic hiển thị trên báo cáo phòng ban: \n-\nA là Giám đốc - thuộc phòng ban cao nhất, B là Trường phòng - thuộc phòng ban con Mua, C là Nhân viên - thuộc phòng ban con Mua, D là Nhân viên – thuộc phòng ban Bán – là con của phòng ban mua.\n1.\nTrường hợp người tạo đơn hàng và người phân chia doanh thu khác nhau: \n-\nC tạo đơn hàng, doanh thu được chia cho A và B.\n·\nTrong phòng ban của A: hiển thị thông tin tổng doanh thu được chia cho A + B\n·\nTrong báo cáo phòng ban của B: hiển thị thông tin tổng doanh thu chia cho B.\n-\nD tạo đơn hàng, doanh thu chia cho D.\n·\nTrong phòng ban của A: Hiển thị thông tin doanh thu chia cho D.\n·\nTrong phòng ban của B: Hiển thị thông tin doanh thu chia cho D.\n·\nTrong phòng ban của B: Hiển thị thông tin doanh thu chia cho D.\n-\nD tạo đơn hàng, doanh thu chia cho B.\n·\nTrong phòng ban của A: Hiển thị thông tin doanh thu chia cho B.\n·\nTrong phòng ban của B: Hiển thị thông tin doanh thu chia cho B.\n·\nTrong phòng ban của D: Hiển thị thông tin doanh thu còn lại của đơn hàng.\n2.\nTrường hợp người tạo đơn hàng và người phân chia doanh thu giống nhau: \n-\nDoanh thu chia cho ai thì xem phòng ban của người đó sẽ hiển thị đúng thông tin đã chia.\n-\nTương tự khi xem báo cáo phòng ban của các phòng ban cha cũng hiển thị đúng số doanh thu chia cho nhân viên đó.",
+    "Giải Pháp": ""
   },
   {
     "ID": 84,
     "Loại": "Note",
+    "Version": "",
+    "Tên": "",
     "Module": "Bảo mật 2.1",
-    "Mô Tả": "Ai có quyền xem dữ liệu nhạy cảm KH thì xem được. Người phụ trách KH nếu ko có quyền thì cũng ko thể xem \n\n \n\n Trong chiến dịch - cơ hội: nếu không có quyền dữ liệu nhạy cảm thì cũng không hiển thị thông tin cho dù mình là người phụ trách cơ hội, chiến dịch \n\n Trong khách hàng: nếu không có quyền dữ liệu nhạy cảm thì cũng không hiển thị thông tin cho dù mình là người phụ trách. \n\n Cài đặt trong cài đặt CRM: bật/tắt Cho phép người phụ trách khách hàng xem dữ liệu nhạy cảm - dùng để chuyển qua lại giữa 2.1 và 2.2. Nhưng sẽ truyền thông ra ngoài đới với bảo mật 2.1 thì cài đặt này là để dùng cho các bên chỉ muốn cho người phụ trách khách hàng xem dữ liệu nhạy cảm của khách hàng đó, không muốn cài đặt quyền dữ liệu nhạy cảm vì khi ấy sẽ xem được hết thông tin khách hàng của người khác."
+    "Mô Tả": "Ai có quyền xem dữ liệu nhạy cảm KH thì xem được. Người phụ trách KH nếu ko có quyền thì cũng ko thể xem\nTrong chiến dịch - cơ hội: nếu không có quyền dữ liệu nhạy cảm thì cũng không hiển thị thông tin cho dù mình là người phụ trách cơ hội, chiến dịch\nTrong khách hàng: nếu không có quyền dữ liệu nhạy cảm thì cũng không hiển thị thông tin cho dù mình là người phụ trách.\nCài đặt trong cài đặt CRM: bật/tắt Cho phép người phụ trách khách hàng xem dữ liệu nhạy cảm - dùng để chuyển qua lại giữa 2.1 và 2.2. Nhưng sẽ truyền thông ra ngoài đới với bảo mật 2.1 thì cài đặt này là để dùng cho các bên chỉ muốn cho người phụ trách khách hàng xem dữ liệu nhạy cảm của khách hàng đó, không muốn cài đặt quyền dữ liệu nhạy cảm vì khi ấy sẽ xem được hết thông tin khách hàng của người khác.",
+    "Giải Pháp": ""
   },
   {
     "ID": 85,
     "Loại": "Note",
+    "Version": "",
+    "Tên": "",
     "Module": "Thông tin chung của bảo mật",
-    "Mô Tả": "Cài đặt trong cài đặt CRM: bật/tắt Cho phép người phụ trách khách hàng xem dữ liệu nhạy cảm - dùng để chuyển qua lại giữa 2.1 và 2.2. Nhưng sẽ truyền thông ra ngoài đối với bảo mật 2.1 thì cài đặt này là để dùng cho các bên chỉ muốn cho người phụ trách khách hàng xem dữ liệu nhạy cảm của khách hàng đó, không muốn cài đặt quyền dữ liệu nhạy cảm vì khi ấy sẽ xem được hết thông tin khách hàng của người khác. \n\n Để che thông tin thì cần cài đặt trong cài đặt định nghĩa dữ liệu. \n\n Người có quyền sửa DLNC mới được sửa các thông tin này trong chi tiết khách hàng. \n\n Dữ liệu là sđt bị che vẫn có thể click gọi được"
+    "Mô Tả": "Cài đặt trong cài đặt CRM: bật/tắt Cho phép người phụ trách khách hàng xem dữ liệu nhạy cảm - dùng để chuyển qua lại giữa 2.1 và 2.2. Nhưng sẽ truyền thông ra ngoài đối với bảo mật 2.1 thì cài đặt này là để dùng cho các bên chỉ muốn cho người phụ trách khách hàng xem dữ liệu nhạy cảm của khách hàng đó, không muốn cài đặt quyền dữ liệu nhạy cảm vì khi ấy sẽ xem được hết thông tin khách hàng của người khác.\nĐể che thông tin thì cần cài đặt trong cài đặt định nghĩa dữ liệu.\nNgười có quyền sửa DLNC mới được sửa các thông tin này trong chi tiết khách hàng.\nDữ liệu là sđt bị che vẫn có thể click gọi được",
+    "Giải Pháp": ""
   },
   {
     "ID": 86,
     "Loại": "Note",
+    "Version": "",
+    "Tên": "",
     "Module": "API + WEBHOOK - Kết nối API + WEBHOOK",
-    "Mô Tả": "Công việc kết nối API không thể hỗ trợ - Kết nối liên quan tới .NET\nhttps://1.getfly.vn/#/tasks/?task_id=259479\n\nHệ quả Webhook chạy với những điều kiện nào trong auto?"
+    "Mô Tả": "Công việc kết nối API không thể hỗ trợ - Kết nối liên quan tới .NET\nhttps: //1.getfly.vn/#/tasks/?task_id=259479\nHệ quả Webhook chạy với những điều kiện nào trong auto?",
+    "Giải Pháp": ""
   },
   {
     "ID": 87,
     "Loại": "Note",
+    "Version": "",
+    "Tên": "",
     "Module": "Thêm mới khách hàng",
-    "Mô Tả": "Sửa khách hàng \n Thêm mới đơn hàng \n Duyệt đơn hàng \n Thanh toán đơn hàng \n Hủy đơn hàng \n Thêm mới phiếu thu/phiếu chi \n Sửa phiếu thu/phiếu chi"
+    "Mô Tả": "Sửa khách hàng\nThêm mới đơn hàng\nDuyệt đơn hàng\nThanh toán đơn hàng\nHủy đơn hàng\nThêm mới phiếu thu/phiếu chi\nSửa phiếu thu/phiếu chi",
+    "Giải Pháp": ""
   },
   {
     "ID": 88,
     "Loại": "Note",
+    "Version": "",
+    "Tên": "",
     "Module": "API danh sách đơn hàng với trường updated_at",
-    "Mô Tả": "Công việc liên quan: https://1.getfly.vn/#/tasks/?task_id=294361 \n Công việc liên quan tới khách viết sai cấu trúc\nThời gian trong tài liệu quy định là timestamp không phải điền ngày dd/mm/yyyy\n\nVì sao gắn ảnh trên thanh công cụ editor thì không hiển thị ảnh?\nLink cv: https://1.getfly.vn/#/tasks/?task_id=263253 \n Nguyên nhân: khi ảnh được gắn trực tiếp sẽ bị biến đổi thành dạng base64 => dài quá giới hạn trong database nên bị cắt bớt đi => Không hiển thị được. Ảnh càng nặng thì nội dung càng dài nên mở giới hạn cũng không giải quyết được vấn đề nếu khách up nhiều ảnh.\n\nApp - Vì sao nội dung công việc trên app không xuống dòng\nTrên app là 1 ô nhập text không xử lý là ô nhập editor như trên PC được nên không làm xuống dòng, thay đổi chữ được"
+    "Mô Tả": "Công việc liên quan: https://1.getfly.vn/#/tasks/?task_id=294361\nCông việc liên quan tới khách viết sai cấu trúc\nThời gian trong tài liệu quy định là timestamp không phải điền ngày dd/mm/yyyy\nVì sao gắn ảnh trên thanh công cụ editor thì không hiển thị ảnh?\nLink cv: https://1.getfly.vn/#/tasks/?task_id=263253\nNguyên nhân: khi ảnh được gắn trực tiếp sẽ bị biến đổi thành dạng base64 => dài quá giới hạn trong database nên bị cắt bớt đi => Không hiển thị được. Ảnh càng nặng thì nội dung càng dài nên mở giới hạn cũng không giải quyết được vấn đề nếu khách up nhiều ảnh.\nApp - Vì sao nội dung công việc trên app không xuống dòng\nTrên app là 1 ô nhập text không xử lý là ô nhập editor như trên PC được nên không làm xuống dòng, thay đổi chữ được",
+    "Giải Pháp": ""
   },
   {
     "ID": 90,
     "Loại": "Note",
+    "Version": "",
+    "Tên": "",
     "Module": "Logic hệ quả ngày giờ trong công việc",
-    "Mô Tả": "https://1.getfly.vn/#/tasks/?task_id=249914\nhttps://1.getfly.vn/#/tasks/?task_id=248647"
+    "Mô Tả": "https://1.getfly.vn/#/tasks/?task_id=249914\nhttps: //1.getfly.vn/#/tasks/?task_id=248647",
+    "Giải Pháp": ""
   },
   {
     "ID": 91,
     "Loại": "Note",
+    "Version": "",
+    "Tên": "",
     "Module": "Không hiển thị ảnh trong bình luận trước năm 2024",
-    "Mô Tả": "https://1.getfly.vn/#/tasks/?task_id=245371 - Link cv liên quan \n Do paste ảnh của zalo, fb, 1 trang web khác sẽ mất sau 1 tgian hoặc bị xóa"
+    "Mô Tả": "https://1.getfly.vn/#/tasks/?task_id=245371 - Link cv liên quan\nDo paste ảnh của zalo, fb, 1 trang web khác sẽ mất sau 1 tgian hoặc bị xóa",
+    "Giải Pháp": ""
   },
   {
     "ID": 94,
     "Loại": "Note",
+    "Version": "",
+    "Tên": "",
     "Module": "Tìm Netwwork Status",
-    "Mô Tả": "Click vào đây\n \n \n Chuột phải vào mạng đang dùng -> chọn Properties\n \n \n Chọn Ipv4 -> click đúp hoặc ấn Properties\n \n \n Nhập thông tin DNS của Google: 8.8.8.8 - 8.8.4.4"
+    "Mô Tả": "Click vào đây\nChuột phải vào mạng đang dùng -> chọn Properties\nChọn Ipv4 -> click đúp hoặc ấn Properties\nNhập thông tin DNS của Google: 8.8.8.8 - 8.8.4.4",
+    "Giải Pháp": ""
   },
   {
     "ID": 95,
     "Loại": "Note",
+    "Version": "",
+    "Tên": "",
     "Module": "Các bước kiểm tra hệ thống",
-    "Mô Tả": "Kiểm tra trên các trình duyệt khác của máy, trình duyệt ẩn danh để xem có vào được không. \n Nếu vẫn không vào được -> ping để xem IP đang về đâu. Địa chỉ đúng là [210.211.125.119]. nếu khác địa chỉ này thì check bước 3 \n Kiểm tra khách hàng có dùng VPN không. Hiện tại có rất nhiều khách hàng dùng cái này để thay đổi DNS máy tính: 1 số phần mềm Cloudfare, MCafe,1.1.1.1, VPN,.... nếu khách hàng đang dùng thì tắt và kiểm tra lại xem có vào được không. \n Nếu như vẫn không vào được (tắt trình duyệt haowcj ctrl+f5, xóa cache) -> thay đổi DNS theo bài đã hướng dẫn \n Nếu như làm tất cả các bước vẫn không được => Báo lại anh Duy"
+    "Mô Tả": "Kiểm tra trên các trình duyệt khác của máy, trình duyệt ẩn danh để xem có vào được không.\nNếu vẫn không vào được -> ping để xem IP đang về đâu. Địa chỉ đúng là [210.211.125.119]. nếu khác địa chỉ này thì check bước 3\nKiểm tra khách hàng có dùng VPN không. Hiện tại có rất nhiều khách hàng dùng cái này để thay đổi DNS máy tính: 1 số phần mềm Cloudfare, MCafe,1.1.1.1, VPN,.... nếu khách hàng đang dùng thì tắt và kiểm tra lại xem có vào được không.\nNếu như vẫn không vào được (tắt trình duyệt haowcj ctrl+f5, xóa cache) -> thay đổi DNS theo bài đã hướng dẫn\nNếu như làm tất cả các bước vẫn không được => Báo lại anh Duy",
+    "Giải Pháp": ""
   },
   {
     "ID": 98,
     "Loại": "Note",
+    "Version": "",
+    "Tên": "",
     "Module": "Logic V5",
-    "Mô Tả": "Số thực chi tự nhập khi tạo danh mục ngân sách: chỉ dùng cho các khoản chi không có phiếu chi. \n \n \n Các hạng mục ngân sách có phát sinh phiếu chi: khi xuất quỹ/ấn tính lại ngân sách sẽ chỉ tính lại tất cả các phiếu chi liên quan hạng mục đó không tính số liệu tự nhập ở cột thực chi. \n \n \n Do đó hệ thống đang chạy đúng đó không phải lỗi đâu e ak. \n Em báo kh nếu hạng mục có các khoản đã chi mà không có phiếu chi thì tạo danh mục riêng tự nhập số thực chi và không thêm phiếu chi vào danh mục này nhé. \n Link cv liên quan: https://1.getfly.vn/#/tasks/?task_id=269527"
+    "Mô Tả": "Số thực chi tự nhập khi tạo danh mục ngân sách: chỉ dùng cho các khoản chi không có phiếu chi.\nCác hạng mục ngân sách có phát sinh phiếu chi: khi xuất quỹ/ấn tính lại ngân sách sẽ chỉ tính lại tất cả các phiếu chi liên quan hạng mục đó không tính số liệu tự nhập ở cột thực chi.\nDo đó hệ thống đang chạy đúng đó không phải lỗi đâu e ak.\nEm báo kh nếu hạng mục có các khoản đã chi mà không có phiếu chi thì tạo danh mục riêng tự nhập số thực chi và không thêm phiếu chi vào danh mục này nhé.\nLink cv liên quan: https://1.getfly.vn/#/tasks/?task_id=269527",
+    "Giải Pháp": ""
   },
   {
     "ID": 99,
     "Loại": "Note",
+    "Version": "",
+    "Tên": "",
     "Module": "Bảng cân đối tài khoản",
-    "Mô Tả": "Công việc liên quan đến thay đổi thống kê bảng cân đối ở v6 so với v5: \n \n Link công việc: https://1.getfly.vn/#/tasks/?task_id=279027"
+    "Mô Tả": "Công việc liên quan đến thay đổi thống kê bảng cân đối ở v6 so với v5:\nLink công việc: https://1.getfly.vn/#/tasks/?task_id=279027",
+    "Giải Pháp": ""
   },
   {
     "ID": 100,
     "Loại": "Note",
+    "Version": "",
+    "Tên": "",
     "Module": "Bảng cân đối tài khoản",
-    "Mô Tả": "Logic hạch toán bảng cần đối tài khoản đối với 3 cấp tài khoản: \n \n Mô tả: 3 cấp tài khoản \n Cấp 1: Tài khoản A \n Cấp 2: Tài khoản B ( tài khoản con của tài khoản A) \n Cấp 3: Tài khoản C ( tài khoản con của tài khoản B) \n Kịch bản: \n B1: Tạo phiếu thu cho C => ghi nhận tổng A = B = C \n B2: Xóa C => A, B cũng trừ số tiền = C đi \n B3: tạo phiếu thu cho B thì ở bảng cân đối tài khoản hệ thống không hiển thị số tiền đó ở B và không cộng vào A => cần\nđiều chỉnh: để B được hạch toán vào A khi đã xóa C. \n \n Logic hạch toán bảng cần đối tài khoản đối với 2 cấp tài khoản: \n \n Công dồn tài khoản cấp thấp nhất lên cao nhất.\n\nCông thức tính tồn quỹ, tồn đầu quỹ ở Danh sách, chi tiết, kiểm kê quỹ"
+    "Mô Tả": "Logic hạch toán bảng cần đối tài khoản đối với 3 cấp tài khoản:\nMô tả: 3 cấp tài khoản\nCấp 1: Tài khoản A\nCấp 2: Tài khoản B ( tài khoản con của tài khoản A)\nCấp 3: Tài khoản C ( tài khoản con của tài khoản B)\nKịch bản: \nB1: Tạo phiếu thu cho C => ghi nhận tổng A = B = C\nB2: Xóa C => A, B cũng trừ số tiền = C đi\nB3: tạo phiếu thu cho B thì ở bảng cân đối tài khoản hệ thống không hiển thị số tiền đó ở B và không cộng vào A => cần\nđiều chỉnh: để B được hạch toán vào A khi đã xóa C.\nLogic hạch toán bảng cần đối tài khoản đối với 2 cấp tài khoản: \nCông dồn tài khoản cấp thấp nhất lên cao nhất.\nCông thức tính tồn quỹ, tồn đầu quỹ ở Danh sách, chi tiết, kiểm kê quỹ",
+    "Giải Pháp": ""
   },
   {
     "ID": 101,
     "Loại": "Note",
+    "Version": "",
+    "Tên": "",
     "Module": "Ví dụ:",
-    "Mô Tả": "Số dư đầu kỳ = X đ \n Ngày chốt số dư đầu kỳ = 31/12/2022 \n Kỳ lọc = 1/9/2024 - 30/09/2024 \n Ngày hiện tại = 2/10/2024 \n Màn hình Kiểm kê: \n \n \n Tồn đầu quỹ = Tổng tất cả phiếu thu/chi/chuyển/nhận phát sinh từ thời điểm ngày chốt số dư đầu kì đến kì tại thời điểm lọc + số dư đầu kỳ. \n \n Cụ thể: từ ngày 1/1/2023 đến 31/8/2024 + số dư đầu kỳ \n \n \n \n Số tiền hiện thời trong quỹ = Tổng (tất cả phiếu phát sinh từ sau ngày chốt đến ngày hiện tại) + Số dư đầu kỳ \n \n Cụ thể: Tổng (tất cả phiếu phát sinh từ ngày 01/01/2023 - 02/10/2024 hiện tại) + Số dư đầu kỳ \n \n \n \n Màn hình chi tiết: \n \n Tồn đầu quỹ = Tổng tất cả phiếu thu/chi/chuyển/nhận phát sinh từ thời điểm ngày chốt số dư đầu kì đến kì tại thời điểm lọc+ số dư đầu kỳ = Tồn đầu quỹ màn hình kiểm kê\n \n Cụ thể: từ ngày 1/1/2023 đến 31/8/2024 + số dư đầu kỳ \n \n \n Tồn quỹ = Tồn đầu quỹ + Tổng (thu-chi) trong kỳ lọc \n \n Màn hình danh sách: \n \n Tồn quỹ: khác với tồn quỹ ở màn hình chi tiết + màn hình kiểm kê \n Tồn quỹ = Tổng tất cả các phiếu thu/chi/chuyển/nhận đã phát sinh của quỹ \n \n Các công việc liên quan đến phần này: \n \n \n Hệ thống 4.0: quỹ bên khách kenza: https://1.getfly.vn/#/tasks/?task_id=279778 \n \n \n Bản cập nhật thay đổi công thức tính tồn đầu quỹ ở màn hình kiểm kê 4.0:"
+    "Mô Tả": "Số dư đầu kỳ = X đ\nNgày chốt số dư đầu kỳ = 31/12/2022\nKỳ lọc = 1/9/2024 - 30/09/2024\nNgày hiện tại = 2/10/2024\nMàn hình Kiểm kê: \nTồn đầu quỹ = Tổng tất cả phiếu thu/chi/chuyển/nhận phát sinh từ thời điểm ngày chốt số dư đầu kì đến kì tại thời điểm lọc + số dư đầu kỳ.\nCụ thể: từ ngày 1/1/2023 đến 31/8/2024 + số dư đầu kỳ\nSố tiền hiện thời trong quỹ = Tổng (tất cả phiếu phát sinh từ sau ngày chốt đến ngày hiện tại) + Số dư đầu kỳ\nCụ thể: Tổng (tất cả phiếu phát sinh từ ngày 01/01/2023 - 02/10/2024 hiện tại) + Số dư đầu kỳ\nMàn hình chi tiết: \nTồn đầu quỹ = Tổng tất cả phiếu thu/chi/chuyển/nhận phát sinh từ thời điểm ngày chốt số dư đầu kì đến kì tại thời điểm lọc+ số dư đầu kỳ = Tồn đầu quỹ màn hình kiểm kê\nCụ thể: từ ngày 1/1/2023 đến 31/8/2024 + số dư đầu kỳ\nTồn quỹ = Tồn đầu quỹ + Tổng (thu-chi) trong kỳ lọc\nMàn hình danh sách: \nTồn quỹ: khác với tồn quỹ ở màn hình chi tiết + màn hình kiểm kê\nTồn quỹ = Tổng tất cả các phiếu thu/chi/chuyển/nhận đã phát sinh của quỹ\nCác công việc liên quan đến phần này: \nHệ thống 4.0: quỹ bên khách kenza: https://1.getfly.vn/#/tasks/?task_id=279778\nBản cập nhật thay đổi công thức tính tồn đầu quỹ ở màn hình kiểm kê 4.0: ",
+    "Giải Pháp": ""
   },
   {
     "ID": 102,
     "Loại": "Note",
+    "Version": "",
+    "Tên": "",
     "Module": "Công nợ",
-    "Mô Tả": "Công nợ sẽ chỉ ghi nhận các khoản đã thanh toán đơn hàng và ghi nhận đúng khi đơn hàng được duyệt \n Công việc liên quan: https://1.getfly.vn/#/tasks/?task_id=296618 \n Công nợ chưa ghi nhận: \n Do đơn hàng chưa được duyệt:"
+    "Mô Tả": "Công nợ sẽ chỉ ghi nhận các khoản đã thanh toán đơn hàng và ghi nhận đúng khi đơn hàng được duyệt\nCông việc liên quan: https://1.getfly.vn/#/tasks/?task_id=296618\nCông nợ chưa ghi nhận: \nDo đơn hàng chưa được duyệt: ",
+    "Giải Pháp": ""
   },
   {
     "ID": 104,
     "Loại": "Note",
+    "Version": "",
+    "Tên": "",
     "Module": "Tạo app kết nối GG sheet báo lỗi chưa xác thực",
-    "Mô Tả": "Trong các bước tạo app để kết nối gg sheet sẽ có bước chọn public app phải chọn nút này thì app mới kết nối thành công được. \n \n \n \n Nếu không chọn thì sẽ báo chưa xác thực như ảnh"
+    "Mô Tả": "Trong các bước tạo app để kết nối gg sheet sẽ có bước chọn public app phải chọn nút này thì app mới kết nối thành công được.\nNếu không chọn thì sẽ báo chưa xác thực như ảnh",
+    "Giải Pháp": ""
   },
   {
     "ID": 105,
     "Loại": "Note",
+    "Version": "",
+    "Tên": "",
     "Module": "Tài liệu kết nối GG Sheet v6",
-    "Mô Tả": "Công việc xin tài liệu kết nối: https://1.getfly.vn/#/tasks/?task_id=297543"
+    "Mô Tả": "Công việc xin tài liệu kết nối: https://1.getfly.vn/#/tasks/?task_id=297543",
+    "Giải Pháp": ""
   },
   {
     "ID": 106,
     "Loại": "Note",
+    "Version": "",
+    "Tên": "",
     "Module": "Vấn đề liên quan Google Sheets",
-    "Mô Tả": "Vấn đề: Khách hàng kết nối Google Sheets nhưng không đổ thông tin về Getfly \n \n \n Nguyên nhân có thể gặp - Cách xử lí :\n \n Khách hàng gõ sai chính tả tên field của Google Sheets -> Gõ lại đúng tên \n \n Ở cột người phụ trách trong sheets điền tên người phụ trách -> Ô này cần nhập tên đăng nhập (username) của nhân viên đó. \n \n Tài khoản Gmail điền thông tin vào Google Sheets không có quyền đẩy dữ liệu về Getfly -> Sử dụng đúng tài khoản có quyền hoặc trong thiết lập Google Sheets cần bật chế độ Public"
+    "Mô Tả": "Vấn đề: Khách hàng kết nối Google Sheets nhưng không đổ thông tin về Getfly\nNguyên nhân có thể gặp - Cách xử lí: \nKhách hàng gõ sai chính tả tên field của Google Sheets -> Gõ lại đúng tên\nỞ cột người phụ trách trong sheets điền tên người phụ trách -> Ô này cần nhập tên đăng nhập (username) của nhân viên đó.\nTài khoản Gmail điền thông tin vào Google Sheets không có quyền đẩy dữ liệu về Getfly -> Sử dụng đúng tài khoản có quyền hoặc trong thiết lập Google Sheets cần bật chế độ Public",
+    "Giải Pháp": ""
   },
   {
     "ID": 110,
     "Loại": "Note",
+    "Version": "",
+    "Tên": "",
     "Module": "Kết nối ZNS không hiển thị mẫu",
-    "Mô Tả": "Công việc liên quan: https://1.getfly.vn/#/tasks/?task_id=286210\n\nCông việc không chạy auto khi thiết lập cả gửi sms vs zns\nLink cv: https://1.getfly.vn/#/tasks/?task_id=301459 \n Logic truyền thông tin: zns của Get -> zns của South -> zalo \n Trong cv là thông tin đẩy từ Get về South nhưng chưa gửi về zalo"
+    "Mô Tả": "Công việc liên quan: https://1.getfly.vn/#/tasks/?task_id=286210\nCông việc không chạy auto khi thiết lập cả gửi sms vs zns\nLink cv: https://1.getfly.vn/#/tasks/?task_id=301459\nLogic truyền thông tin: zns của Get -> zns của South -> zalo\nTrong cv là thông tin đẩy từ Get về South nhưng chưa gửi về zalo",
+    "Giải Pháp": ""
   },
   {
     "ID": 112,
     "Loại": "Note",
+    "Version": "",
+    "Tên": "",
     "Module": "Mẫu các thông tin cần lấy để kiểm tra với cv này:",
-    "Mô Tả": "Công việc mẫu: https://1.getfly.vn/#/tasks/?task_id=273684 \n Quan trọng cần lấy: file dữ liệu đổ từ FB về đang ghi nhận như nào \n Ngoài ra thêm thông tin cài đặt"
+    "Mô Tả": "Công việc mẫu: https://1.getfly.vn/#/tasks/?task_id=273684\nQuan trọng cần lấy: file dữ liệu đổ từ FB về đang ghi nhận như nào\nNgoài ra thêm thông tin cài đặt",
+    "Giải Pháp": ""
   },
   {
     "ID": 113,
     "Loại": "Note",
+    "Version": "",
+    "Tên": "",
     "Module": "Không tạo được KPI cùng chức danh - vị trí",
-    "Mô Tả": "Đầu bài: 1 vị trí có nhiều nhân viên thì có tạo được cho mỗi nhân viên 1 phiếu KPI khác nhau không? \n Công việc liên quan:\nhttps://1.getfly.vn/#/tasks/?task_id=265438 \n https://1.getfly.vn/#/tasks/?task_id=294037 \n Trả lời: Không tạo được mỗi người 1 phiếu khác nhau vì KPI v2,v3 là tạo theo chức danh, vị trí chung không phân tách.\nNếu muốn mỗi nhân viên 1 vị trí thì tác nhân viên ra mỗi người 1 chức danh, 1 vị trí."
+    "Mô Tả": "Đầu bài: 1 vị trí có nhiều nhân viên thì có tạo được cho mỗi nhân viên 1 phiếu KPI khác nhau không?\nCông việc liên quan: \nhttps: //1.getfly.vn/#/tasks/?task_id=265438\nhttps: //1.getfly.vn/#/tasks/?task_id=294037\nTrả lời: Không tạo được mỗi người 1 phiếu khác nhau vì KPI v2,v3 là tạo theo chức danh, vị trí chung không phân tách.\nNếu muốn mỗi nhân viên 1 vị trí thì tác nhân viên ra mỗi người 1 chức danh, 1 vị trí.",
+    "Giải Pháp": ""
   },
   {
     "ID": 114,
     "Loại": "Note",
+    "Version": "",
+    "Tên": "",
     "Module": "SMS",
-    "Mô Tả": "- Các vấn đề từng gặp khi xử lý công việc hỗ trợ liên quan SMS"
+    "Mô Tả": "- Các vấn đề từng gặp khi xử lý công việc hỗ trợ liên quan SMS",
+    "Giải Pháp": ""
   },
   {
     "ID": 115,
     "Loại": "Note",
+    "Version": "",
+    "Tên": "",
     "Module": "SMS CMS - Trống thông tin Lí do gửi thất bại",
-    "Mô Tả": "Nguyên nhân: Quá trình gửi bị gián đoạn có thể xuất phát từ việc gửi nhiều SMS một lúc dẫn đến bên đối tác không phản hồi lại kết quả. Thêm nữa là khi xảy ra vấn đề, bên SMS cũng không trả về lỗi nên hệ thống Getfly mình không có thông tin để hiển thị lí do gửi thất bại, dẫn đến để trống."
+    "Mô Tả": "Nguyên nhân: Quá trình gửi bị gián đoạn có thể xuất phát từ việc gửi nhiều SMS một lúc dẫn đến bên đối tác không phản hồi lại kết quả. Thêm nữa là khi xảy ra vấn đề, bên SMS cũng không trả về lỗi nên hệ thống Getfly mình không có thông tin để hiển thị lí do gửi thất bại, dẫn đến để trống.",
+    "Giải Pháp": ""
   },
   {
     "ID": 116,
     "Loại": "Note",
+    "Version": "",
+    "Tên": "",
     "Module": "Note Logic liên quan SMS",
-    "Mô Tả": "Thời gian trong chi tiết SMS là thời gian dự kiến gửi sms đi, không phải là thời gian thực gửi do đó khi bấm gửi lại tin nhắn gửi thất bại, thời gian gửi vẫn sẽ hiển thị thời gian cũ, không cập nhật lại thời gian khi bấm gửi lại."
+    "Mô Tả": "Thời gian trong chi tiết SMS là thời gian dự kiến gửi sms đi, không phải là thời gian thực gửi do đó khi bấm gửi lại tin nhắn gửi thất bại, thời gian gửi vẫn sẽ hiển thị thời gian cũ, không cập nhật lại thời gian khi bấm gửi lại.",
+    "Giải Pháp": ""
   },
   {
     "ID": 118,
     "Loại": "Note",
+    "Version": "",
+    "Tên": "",
     "Module": "Hệ thống 4.0",
-    "Mô Tả": "Hệ thống 6.0 \n \n https://crmfsc.fpt.edu.vn \n \n \n \n Kết nối Insider không đổ TT về Getfly/FPT. Link cv https://1.getfly.vn/#/tasks/?task_id=297434"
+    "Mô Tả": "Hệ thống 6.0\nhttps: //crmfsc.fpt.edu.vn\nKết nối Insider không đổ TT về Getfly/FPT. Link cv https: //1.getfly.vn/#/tasks/?task_id=297434",
+    "Giải Pháp": ""
   },
   {
     "ID": 121,
     "Loại": "Note",
+    "Version": "",
+    "Tên": "",
     "Module": "Không đẩy mẫu OA, ZNS mới về CRM",
-    "Mô Tả": "Khách hàng vừa khai báo thêm 1 số mẫu tem ZNS, nhưng khi xem trên Getfly thì chỉ hiện các mẫu tem trước đấy ( không hiện các mẫu mới khai báo) \n Hướng giải quyết: \n \n \n Thao tác gỡ OA và gỡ ZnS tích hợp lại \n \n \n Danh sách template bên mình lấy là lấy trực tiếp từ bên Zalo (Tất cả những template đã duyệt và đang active). Báo lại với bên CS báo bên đối tác check (Vhat) \n \n \n Template ZNS được khai báo trên tài khoản của đối tác, nhưng tài khoản đó được quản lý bởi zalo - ZCA chứ không phải hệ thống quản lý riêng bên đối tác (vihat). Về thông tin ZCA có thể tham khảo \n \n \n (https://oa.zalo.me/home/resources/guides/zalo-cloud-account-la-gi_1091611867954365674) \n Khi Getfly lấy template sẽ theo quy trình Getfly CRM <=> App Getfly <=> ZCA (của đối tác) <=> Zalo ZNS (template) nên mình vẫn đang lấy template trực tiếp từ Zalo ZNS \n Nên ở đây nếu Vihat khai báo Template cho khách hàng thì phải khai báo trên tài khoản ZCA của Vihat\n\nKết nối Zalo OA nhưng tên tài khoản zalo không hiển thị mà hiển thị đoạn mã số\ncv ví dụ: \n https://1.getfly.vn/#/tasks/?task_id=298586 \n https://1.getfly.vn/#/tasks/?task_id=290421 \n \n Nguyên nhân dự đoán:\n \n Do hết token: cần kết nối lại \n Hoặc do khách sử dụng gói Zalo OA free cần nâng cấp lên gói trả phí"
+    "Mô Tả": "Khách hàng vừa khai báo thêm 1 số mẫu tem ZNS, nhưng khi xem trên Getfly thì chỉ hiện các mẫu tem trước đấy ( không hiện các mẫu mới khai báo)\nHướng giải quyết: \nThao tác gỡ OA và gỡ ZnS tích hợp lại\nDanh sách template bên mình lấy là lấy trực tiếp từ bên Zalo (Tất cả những template đã duyệt và đang active). Báo lại với bên CS báo bên đối tác check (Vhat)\nTemplate ZNS được khai báo trên tài khoản của đối tác, nhưng tài khoản đó được quản lý bởi zalo - ZCA chứ không phải hệ thống quản lý riêng bên đối tác (vihat). Về thông tin ZCA có thể tham khảo\n(https: //oa.zalo.me/home/resources/guides/zalo-cloud-account-la-gi_1091611867954365674)\nKhi Getfly lấy template sẽ theo quy trình Getfly CRM <=> App Getfly <=> ZCA (của đối tác) <=> Zalo ZNS (template) nên mình vẫn đang lấy template trực tiếp từ Zalo ZNS\nNên ở đây nếu Vihat khai báo Template cho khách hàng thì phải khai báo trên tài khoản ZCA của Vihat\nKết nối Zalo OA nhưng tên tài khoản zalo không hiển thị mà hiển thị đoạn mã số\ncv ví dụ: \nhttps: //1.getfly.vn/#/tasks/?task_id=298586\nhttps: //1.getfly.vn/#/tasks/?task_id=290421\nNguyên nhân dự đoán: \nDo hết token: cần kết nối lại\nHoặc do khách sử dụng gói Zalo OA free cần nâng cấp lên gói trả phí",
+    "Giải Pháp": ""
   },
   {
     "ID": 124,
     "Loại": "Note",
+    "Version": "",
+    "Tên": "",
     "Module": "Trỏ domain",
-    "Mô Tả": "Get cung cấp cho khách domain A > sau đó khách đăng ký với các bên chuyển đổi domain để đổi tên domain này sang là domain B > chỉ để hiển thị \n \n thực tế vào hệ thống CRM bằng domain A hay B đều được"
+    "Mô Tả": "Get cung cấp cho khách domain A > sau đó khách đăng ký với các bên chuyển đổi domain để đổi tên domain này sang là domain B > chỉ để hiển thị\nthực tế vào hệ thống CRM bằng domain A hay B đều được",
+    "Giải Pháp": ""
   },
   {
     "ID": 127,
     "Loại": "Note",
+    "Version": "",
+    "Tên": "",
     "Module": "Số tự tăng nhảy không đúng theo mã mới nhất sinh ra",
-    "Mô Tả": "Công việc: https://1.getfly.vn/#/tasks/?task_id=297696 \n \n Đặc thù: khách dùng hệ thống song song 6.0 và 4.0 \n Khách tạo đơn hàng trên 4.0; cài đặt quy tắc sinh mã trên 6.0 với đơn hàng \n Vấn đề: đơn hàng tạo mới không nhảy đúng với số tự tăng ở cài đặt sinh mã \n Nguyên nhân: cài đặt mã không áp dụng cho đơn hàng tạo ở 4.0 \n \n LƯU Ý: \n \n Với các hệ thống song song: quan trọng nhất cần biết khách cài đặt ở hệ thống nào; tạo đơn hàng từ những nguồn nào; tạo từ hệ thống nào"
+    "Mô Tả": "Công việc: https://1.getfly.vn/#/tasks/?task_id=297696\nĐặc thù: khách dùng hệ thống song song 6.0 và 4.0\nKhách tạo đơn hàng trên 4.0; cài đặt quy tắc sinh mã trên 6.0 với đơn hàng\nVấn đề: đơn hàng tạo mới không nhảy đúng với số tự tăng ở cài đặt sinh mã\nNguyên nhân: cài đặt mã không áp dụng cho đơn hàng tạo ở 4.0\nLƯU Ý: \nVới các hệ thống song song: quan trọng nhất cần biết khách cài đặt ở hệ thống nào; tạo đơn hàng từ những nguồn nào; tạo từ hệ thống nào",
+    "Giải Pháp": ""
   },
   {
     "ID": 130,
     "Loại": "Note",
+    "Version": "",
+    "Tên": "",
     "Module": "Đăng ký Webhook Đơn hàng báo lỗi",
-    "Mô Tả": "1. Vấn đề gặp phải \n \n Bấm Đăng ký Webhook Đơn hàng báo lỗi như ảnh\n \n \n \n 2. Nguyên nhân \n \n Do trước đó đã có webhook này trên hệ thống nên khi đăng ký lại báo trùng gây ra lỗi \n \n 3. Cách xử lý \n \n Lấy đầy đủ thông tin kết nối \n Báo thông tin cho các anh để các anh xoá webhook cũ và đăng ký lại.\n\nĐơn hàng đẩy từ kiot viet về bị sai giá bán sản phẩm\nCông việc liên quan: https://1.getfly.vn/#/tasks/?task_id=301596\nKịch bản: Sản phẩm A có giá bán 2tr trên Kiot viet. Khách lên hóa đơn với giá bán = 3tr cho sp A > đẩy đơn hàng này qua CRM ghi nhận đơn giá chỉ còn = 2tr."
+    "Mô Tả": "1. Vấn đề gặp phải\nBấm Đăng ký Webhook Đơn hàng báo lỗi như ảnh\n2. Nguyên nhân\nDo trước đó đã có webhook này trên hệ thống nên khi đăng ký lại báo trùng gây ra lỗi\n3. Cách xử lý\nLấy đầy đủ thông tin kết nối\nBáo thông tin cho các anh để các anh xoá webhook cũ và đăng ký lại.\nĐơn hàng đẩy từ kiot viet về bị sai giá bán sản phẩm\nCông việc liên quan: https://1.getfly.vn/#/tasks/?task_id=301596\nKịch bản: Sản phẩm A có giá bán 2tr trên Kiot viet. Khách lên hóa đơn với giá bán = 3tr cho sp A > đẩy đơn hàng này qua CRM ghi nhận đơn giá chỉ còn = 2tr.",
+    "Giải Pháp": ""
   },
   {
     "ID": 133,
     "Loại": "Note",
+    "Version": "",
+    "Tên": "",
     "Module": "Sửa đơn hàng trên kiot viet đẩy về đơn hàng mới",
-    "Mô Tả": "Nếu đơn hàng từ kiot việt đã đẩy về Get CRM lần đầu \n Sau đó khách sửa đơn hàng thay đổi đơn giá hay thông tin đơn hàng > sẽ đẩy đơn hàng về CRM theo hình thức sinh ra 1 đơn hàng mới với mã đơn hàng Mới nhất + \"- 01\" \n Ảnh đơn gốc: \n \n Ảnh bên kiot:"
+    "Mô Tả": "Nếu đơn hàng từ kiot việt đã đẩy về Get CRM lần đầu\nSau đó khách sửa đơn hàng thay đổi đơn giá hay thông tin đơn hàng > sẽ đẩy đơn hàng về CRM theo hình thức sinh ra 1 đơn hàng mới với mã đơn hàng Mới nhất + \"- 01\"\nẢnh đơn gốc: \nẢnh bên kiot: ",
+    "Giải Pháp": ""
   },
   {
     "ID": 134,
     "Loại": "Note",
+    "Version": "",
+    "Tên": "",
     "Module": "Báo có lỗi xảy ra",
-    "Mô Tả": "Thêm mới hoặc sửa người dùng hoặc xóa người dùng báo có lỗi xảy ra. Các thông tin cần lấy: \n \n Domain \n Hệ thống vừa nâng cấp hay tạo mới hay dùng lâu rồi \n Nếu là vừa nâng cấp hoặc khởi tạo thì gửi thông tin lên nhóm báo dev check luôn \n Nếu rơi vào trường hợp khác thì ultra \n \n \n \n Thêm khách hàng hoặc đơn hàng hoặc thao tác khác báo có lỗi xảy ra \n \n Hỏi các thông tin như TH1 ở trên \n Và xử lý tương tự"
+    "Mô Tả": "Thêm mới hoặc sửa người dùng hoặc xóa người dùng báo có lỗi xảy ra. Các thông tin cần lấy:\nDomain\nHệ thống vừa nâng cấp hay tạo mới hay dùng lâu rồi\nNếu là vừa nâng cấp hoặc khởi tạo thì gửi thông tin lên nhóm báo dev check luôn\nNếu rơi vào trường hợp khác thì ultra\nThêm khách hàng hoặc đơn hàng hoặc thao tác khác báo có lỗi xảy ra\nHỏi các thông tin như TH1 ở trên\nVà xử lý tương tự",
+    "Giải Pháp": ""
   },
   {
     "ID": 139,
     "Loại": "Note",
+    "Version": "",
+    "Tên": "",
     "Module": "Tài khoản test bên Hilo cung cấp",
-    "Mô Tả": "Endpoint:\nhttps://uat78.hilo.com.vn \n Tên đăng nhập: admin \n Mật khẩu : 12345678@a \n MST: 0106713804-999 \n Serial : C25TCC"
+    "Mô Tả": "Endpoint:\nhttps: //uat78.hilo.com.vn\nTên đăng nhập: admin\nMật khẩu: 12345678@a\nMST: 0106713804-999\nSerial: C25TCC",
+    "Giải Pháp": ""
   },
   {
     "ID": 140,
     "Loại": "Note",
+    "Version": "",
+    "Tên": "",
     "Module": "Logic liên quan",
-    "Mô Tả": "I. Đơn được tạo thành công thông qua API hay KiotViet hay tạo trực tiếp, khi người dùng bấm tạo hoá đơn ở chi tiết đơn hàng, đều sẽ tự phát hành hoá đơn (khi tích chọn option trong thiết lập) \n II. Sau khi hoá đơn được tạo, hoá đơn sẽ có trạng thái chưa phát hành hoặc đã phát hành. \n \n Nếu người dùng tích tự động phát hành thì hoá đơn sẽ được phát hành luôn. \n Nếu người dùng không tích tự động phát hành thì sẽ sang bên Hilo và chủ động bấm phát hành hoá đơn ở web Hilo."
+    "Mô Tả": "I. Đơn được tạo thành công thông qua API hay KiotViet hay tạo trực tiếp, khi người dùng bấm tạo hoá đơn ở chi tiết đơn hàng, đều sẽ tự phát hành hoá đơn (khi tích chọn option trong thiết lập)\nII. Sau khi hoá đơn được tạo, hoá đơn sẽ có trạng thái chưa phát hành hoặc đã phát hành.\nNếu người dùng tích tự động phát hành thì hoá đơn sẽ được phát hành luôn.\nNếu người dùng không tích tự động phát hành thì sẽ sang bên Hilo và chủ động bấm phát hành hoá đơn ở web Hilo.",
+    "Giải Pháp": ""
   },
   {
     "ID": 142,
     "Loại": "Note",
+    "Version": "",
+    "Tên": "",
     "Module": "Đặc biệt: thiết lập auto vòng lặp",
-    "Mô Tả": "khách xem chi tiết auto không thể xem được thiết lập của các hệ quả > đều bị đơ và không thể thao tác gì thêm \n Nguyên nhân: Khách đang thiết lập auto vòng lặp vô hạn nên câu lệnh tìm node gốc bị gọi lại liên tục nên không thể hiển thị \n cv liên quan: https://1.getfly.vn/#/tasks/?task_id=300157 \n Ảnh: \n \n Khi check auto cần đặc biệt chú ý các thiết lập auto dạng vòng lặp như này ở tất cả các trường hợp"
+    "Mô Tả": "khách xem chi tiết auto không thể xem được thiết lập của các hệ quả > đều bị đơ và không thể thao tác gì thêm\nNguyên nhân: Khách đang thiết lập auto vòng lặp vô hạn nên câu lệnh tìm node gốc bị gọi lại liên tục nên không thể hiển thị\ncv liên quan: https://1.getfly.vn/#/tasks/?task_id=300157\nẢnh: \nKhi check auto cần đặc biệt chú ý các thiết lập auto dạng vòng lặp như này ở tất cả các trường hợp",
+    "Giải Pháp": ""
   },
   {
     "ID": 143,
     "Loại": "Note",
+    "Version": "",
+    "Tên": "",
     "Module": "ZALO OA",
-    "Mô Tả": "Tích hợp zalo báo đường dẫn OA chưa được xác thực domain\ncv liên quan: https://1.getfly.vn/#/tasks/?task_id=300509"
+    "Mô Tả": "Tích hợp zalo báo đường dẫn OA chưa được xác thực domain\ncv liên quan: https://1.getfly.vn/#/tasks/?task_id=300509",
+    "Giải Pháp": ""
   },
   {
     "ID": 145,
     "Loại": "Note",
+    "Version": "",
+    "Tên": "",
     "Module": "Quy trình xử lí công việc",
-    "Mô Tả": "#1. Khách hàng server riêng tạo yêu cầu nâng cấp hệ thống"
+    "Mô Tả": "#1. Khách hàng server riêng tạo yêu cầu nâng cấp hệ thống",
+    "Giải Pháp": ""
   },
   {
     "ID": 146,
     "Loại": "Note",
+    "Version": "",
+    "Tên": "",
     "Module": "I. Bối cảnh",
-    "Mô Tả": "Khách hàng bị thiếu code BE nên tính năng trên app hoạt động không đúng \n \n II. Cách xử lí \n \n Yêu cầu phía CSKH ghi nhận lại thông tin khách hàng đã xác nhận nâng cấp phiên bản \n Cung cấp thông tin và tag anh Duy trong công việc"
+    "Mô Tả": "Khách hàng bị thiếu code BE nên tính năng trên app hoạt động không đúng\nII. Cách xử lí\nYêu cầu phía CSKH ghi nhận lại thông tin khách hàng đã xác nhận nâng cấp phiên bản\nCung cấp thông tin và tag anh Duy trong công việc",
+    "Giải Pháp": ""
   },
   {
     "ID": 148,
     "Loại": "Note",
+    "Version": "",
+    "Tên": "",
     "Module": "Thư nội bộ có thời gian lưu trữ không",
-    "Mô Tả": "Thư nội bộ được lưu trữ ở piscale và tồn tại vĩnh viễn \n công việc liên quan: https://1.getfly.vn/#/tasks/?task_id=302088"
+    "Mô Tả": "Thư nội bộ được lưu trữ ở piscale và tồn tại vĩnh viễn\ncông việc liên quan: https://1.getfly.vn/#/tasks/?task_id=302088",
+    "Giải Pháp": ""
   },
   {
-    "Loại": "Logic",
+    "ID": 149,
+    "Loại": "Test",
+    "Version": "",
+    "Tên": "Test",
     "Module": "Khách hàng",
     "Mô Tả": "Tính năng thay đổi người phụ trách ở màn hình F2",
-    "ID": 149
+    "Giải Pháp": ""
   }
 ]
