@@ -32,3 +32,5 @@ ehthumbs.db
 *.secret
 *.token
 
+bot_tele_log.txt
+

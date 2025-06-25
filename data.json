@@ -806,7 +806,7 @@
     "Version": "6.0",
     "Tên": "Tài khoản test bên Hilo cung cấp",
     "Module": "Hoá đơn điện tử Hilo",
-    "Mô Tả": "\nEndpoint: https: //uat78.hilo.com.vn\nTên đăng nhập: admin\nMật khẩu: 12345678@a\nMST: 0106713804-999\nSerial: C25TCC",
+    "Mô Tả": "",
     "Giải Pháp": ""
   },
   {
@@ -875,7 +875,7 @@
     "Version": "",
     "Giải Pháp": "",
     "Module": "Gửi SMS",
-    "Mô Tả": "Mô tả: Gửi SMS thất bại\nNguyên nhân: \n1. https://wiki.getfly.vn/portal/post/2350\nhttp://192.168.1.34:6875/books/cac-buoc-ho-tro/page/gui-sms-cau-hinh-sms-thanh-cong-nhung-khong-nhan-duoc-tin-nhan-sms-vietguys\n2. Đọc các cv cũ \n3. Xác định lỗi Getfly hay đối tác",
+    "Mô Tả": "Gửi SMS thất bại\nNguyên nhân: \n1. https://wiki.getfly.vn/portal/post/2350\nhttp://192.168.1.34:6875/books/cac-buoc-ho-tro/page/gui-sms-cau-hinh-sms-thanh-cong-nhung-khong-nhan-duoc-tin-nhan-sms-vietguys\n2. Đọc các cv cũ \n3. Xác định lỗi Getfly hay đối tác",
     "ID": 99
   }
 ]
