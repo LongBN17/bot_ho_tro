@@ -9,11 +9,27 @@ import re
 from dotenv import load_dotenv
 import logging
 
+# --- Custom Logging Filter ---
+class CustomEditAddFilter(logging.Filter):
+    def filter(self, record):
+        msg = record.getMessage()
+        return any(keyword in msg for keyword in [
+            "🆕 Thêm mới Note",
+            "🆕 Thêm mới Logic",
+            "🆕 Thêm mới Issue",
+            "✏️ Đã cập nhật"
+        ])
+
 # --- Logging setup ---
-logging.basicConfig(
-    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
-    level=logging.INFO
-)
+logger = logging.getLogger()
+logger.setLevel(logging.INFO)
+
+file_handler = logging.FileHandler("bot_tele_log.txt", mode="a", encoding="utf-8")
+file_handler.setFormatter(logging.Formatter("%(asctime)s - %(levelname)s - %(message)s"))
+file_handler.addFilter(CustomEditAddFilter())
+
+logger.handlers = []  # Clear default handlers
+logger.addHandler(file_handler)
 
 # --- Constants ---
 LOAI, VERSION, TEN, MODULE, MO_TA, GIAI_PHAP = range(6)
@@ -38,19 +54,13 @@ def save_data(data):
 def search_data(query):
     query = query.strip().lower()
     data = load_data()
-
-    # Tìm theo ID nếu có định dạng id: 149, id=149, id 149
     match = re.search(r"id[:=\s]*([0-9]+)", query)
     if match:
         id_number = int(match.group(1))
         return [item for item in data if item.get("ID") == id_number]
-
-    # Nếu chỉ là số thì cũng coi là ID
     if query.isdigit():
         id_number = int(query)
         return [item for item in data if item.get("ID") == id_number]
-
-    # Tìm theo nội dung khác
     return [item for item in data if query in json.dumps(item, ensure_ascii=False).lower()]
 
 # --- Command: /add ---
@@ -68,50 +78,42 @@ async def get_loai(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if loai == "Huỷ":
         return await cancel(update, context)
     context.user_data["new_entry"] = {"Loại": loai}
-
     if loai == "Issue":
-        reply_markup = ReplyKeyboardMarkup([["Huỷ"]], one_time_keyboard=True, resize_keyboard=True)
-        await update.message.reply_text("🔹 Nhập Version:", reply_markup=reply_markup)
+        await update.message.reply_text("🔹 Nhập Version:", reply_markup=ReplyKeyboardMarkup([["Huỷ"]], one_time_keyboard=True, resize_keyboard=True))
         return VERSION
     else:
         context.user_data["new_entry"]["Version"] = ""
         context.user_data["new_entry"]["Giải Pháp"] = ""
-        reply_markup = ReplyKeyboardMarkup([["Huỷ"]], one_time_keyboard=True, resize_keyboard=True)
-        await update.message.reply_text("🔹 Nhập Module:", reply_markup=reply_markup)
+        await update.message.reply_text("🔹 Nhập Module:", reply_markup=ReplyKeyboardMarkup([["Huỷ"]], one_time_keyboard=True, resize_keyboard=True))
         return MODULE
 
 async def get_version(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if update.message.text.strip() == "Huỷ":
         return await cancel(update, context)
     context.user_data["new_entry"]["Version"] = update.message.text.strip()
-    reply_markup = ReplyKeyboardMarkup([["Huỷ"]], one_time_keyboard=True, resize_keyboard=True)
-    await update.message.reply_text("🔹 Nhập Tên Issue:", reply_markup=reply_markup)
+    await update.message.reply_text("🔹 Nhập Tên Issue:", reply_markup=ReplyKeyboardMarkup([["Huỷ"]], one_time_keyboard=True, resize_keyboard=True))
     return TEN
 
 async def get_ten(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if update.message.text.strip() == "Huỷ":
         return await cancel(update, context)
     context.user_data["new_entry"]["Tên"] = update.message.text.strip()
-    reply_markup = ReplyKeyboardMarkup([["Huỷ"]], one_time_keyboard=True, resize_keyboard=True)
-    await update.message.reply_text("🔹 Nhập Module:", reply_markup=reply_markup)
+    await update.message.reply_text("🔹 Nhập Module:", reply_markup=ReplyKeyboardMarkup([["Huỷ"]], one_time_keyboard=True, resize_keyboard=True))
     return MODULE
 
 async def get_module(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if update.message.text.strip() == "Huỷ":
         return await cancel(update, context)
     context.user_data["new_entry"]["Module"] = update.message.text.strip()
-    reply_markup = ReplyKeyboardMarkup([["Huỷ"]], one_time_keyboard=True, resize_keyboard=True)
-    await update.message.reply_text("🔹 Nhập Mô tả/Nguyên nhân:", reply_markup=reply_markup)
+    await update.message.reply_text("🔹 Nhập Mô tả/Nguyên nhân:", reply_markup=ReplyKeyboardMarkup([["Huỷ"]], one_time_keyboard=True, resize_keyboard=True))
     return MO_TA
 
 async def get_mo_ta(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if update.message.text.strip() == "Huỷ":
         return await cancel(update, context)
     context.user_data["new_entry"]["Mô Tả"] = update.message.text.strip()
-
     if context.user_data["new_entry"]["Loại"] == "Issue":
-        reply_markup = ReplyKeyboardMarkup([["Huỷ"]], one_time_keyboard=True, resize_keyboard=True)
-        await update.message.reply_text("🔹 Nhập Giải pháp/Hướng xử lý:", reply_markup=reply_markup)
+        await update.message.reply_text("🔹 Nhập Giải pháp/Hướng xử lý:", reply_markup=ReplyKeyboardMarkup([["Huỷ"]], one_time_keyboard=True, resize_keyboard=True))
         return GIAI_PHAP
     else:
         await save_entry(update, context)
@@ -133,9 +135,10 @@ async def save_entry(update: Update, context: ContextTypes.DEFAULT_TYPE):
     entry["ID"] = max_id + 1
     data.append(entry)
     save_data(data)
+    logging.info(f"🆕 Thêm mới {entry['Loại']}: {json.dumps(entry, ensure_ascii=False)}")
     await update.message.reply_text(f"✅ Đã lưu dữ liệu mới! (🆔 ID: {entry['ID']})")
 
-# --- Command: /edit ---
+# --- Edit ---
 async def start_edit(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("✏️ Nhập ID của bản ghi bạn muốn chỉnh sửa:")
     return EDIT_ID
@@ -145,24 +148,17 @@ async def edit_entry(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if not text.isdigit():
         await update.message.reply_text("❌ ID không hợp lệ. Vui lòng nhập số.")
         return EDIT_ID
-
     data = load_data()
     entry_id = int(text)
     entry = next((item for item in data if item.get("ID") == entry_id), None)
-
     if not entry:
         await update.message.reply_text(f"❌ Không tìm thấy bản ghi với ID {entry_id}.")
         return ConversationHandler.END
-
     context.user_data["edit_entry"] = entry
     context.user_data["data"] = data
-
-    reply_markup = ReplyKeyboardMarkup([
-        ["Loại", "Tên", "Module"],
-        ["Mô Tả", "Version", "Giải Pháp"],
-        ["Huỷ"]
-    ], one_time_keyboard=True, resize_keyboard=True)
-    await update.message.reply_text("📋 Chọn trường bạn muốn chỉnh sửa:", reply_markup=reply_markup)
+    await update.message.reply_text("📋 Chọn trường bạn muốn chỉnh sửa:", reply_markup=ReplyKeyboardMarkup([
+        ["Loại", "Tên", "Module"], ["Mô Tả", "Version", "Giải Pháp"], ["Huỷ"]
+    ], one_time_keyboard=True, resize_keyboard=True))
     return "CHOOSE_FIELD"
 
 async def choose_field(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -170,7 +166,6 @@ async def choose_field(update: Update, context: ContextTypes.DEFAULT_TYPE):
     valid_fields = ["Loại", "Tên", "Module", "Mô Tả", "Version", "Giải Pháp"]
     if field not in valid_fields:
         return await cancel(update, context)
-
     context.user_data["editing_field"] = field
     await update.message.reply_text(f"✍️ Nhập giá trị mới cho {field}:")
     return "SET_FIELD"
@@ -180,67 +175,50 @@ async def set_field(update: Update, context: ContextTypes.DEFAULT_TYPE):
     field = context.user_data["editing_field"]
     entry = context.user_data["edit_entry"]
     data = context.user_data["data"]
-
     entry[field] = new_value
     save_data(data)
+
+    log_data = {
+        "ID": entry.get("ID"),
+        "Trường": field,
+        "Giá trị mới": new_value
+    }
+    logging.info("✏️ Đã cập nhật: %s", json.dumps(log_data, ensure_ascii=False))
 
     await update.message.reply_text(f"✅ Đã cập nhật {field} thành:\n➡️ {new_value}")
     context.user_data.clear()
     return ConversationHandler.END
 
-# --- Command: /cancel hoặc "Huỷ" ---
+# --- Cancel ---
 async def cancel(update: Update, context: ContextTypes.DEFAULT_TYPE):
     context.user_data.clear()
     await update.message.reply_text("❌ Đã huỷ thao tác.", reply_markup=ReplyKeyboardMarkup([[]], resize_keyboard=True))
     return ConversationHandler.END
 
-# --- Handle search ---
+# --- Search ---
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if update.message is None or update.message.text is None:
         return
-
     query = update.message.text
     results = search_data(query)
-
     if not results:
         await update.message.reply_text("❌ Không tìm thấy kết quả phù hợp.")
         return
-
     response_parts = []
     for item in results:
-        loai = item.get("Loại", "").capitalize()
-        module = item.get("Module", "")
-        mo_ta = item.get("Mô Tả", "")
-        version = item.get("Version", "")
-        ten = item.get("Tên", "")
-        giai_phap = item.get("Giải Pháp", "")
-        id_ = item.get("ID", "")
-
-        part = (
-            f"🔖 Loại: {loai}\n"
-            f"📌 Module: {module}\n"
-            f"🆔 ID: {id_}\n"
-        )
-        if version:
-            part += f"🧩 Version: {version}\n"
-        if ten:
-            part += f"📎 Tên: {ten}\n"
-        if mo_ta:
-            part += f"📄 Mô tả: {mo_ta}\n"
-        if giai_phap:
-            part += f"✅ Giải pháp: {giai_phap}"
-
-        response_parts.append(part.strip())
-
+        part = f"🔖 Loại: {item.get('Loại', '')}\n📌 Module: {item.get('Module', '')}\n🆔 ID: {item.get('ID', '')}"
+        if item.get("Version"): part += f"\n🧩 Version: {item.get('Version')}"
+        if item.get("Tên"): part += f"\n📎 Tên: {item.get('Tên')}"
+        if item.get("Mô Tả"): part += f"\n📄 Mô tả: {item.get('Mô Tả')}"
+        if item.get("Giải Pháp"): part += f"\n✅ Giải pháp: {item.get('Giải Pháp')}"
+        response_parts.append(part)
     full_response = "\n\n---\n\n".join(response_parts)
     max_len = 4000
-
     if len(full_response) <= max_len:
         await update.message.reply_text(full_response)
     else:
-        parts = full_response.split("\n\n---\n\n")
         buffer = ""
-        for part in parts:
+        for part in response_parts:
             if len(buffer) + len(part) + 5 < max_len:
                 buffer += part + "\n\n---\n\n"
             else:
@@ -255,7 +233,7 @@ async def error_handler(update: object, context: ContextTypes.DEFAULT_TYPE):
     if isinstance(update, Update) and update.message:
         await update.message.reply_text("❌ Có lỗi xảy ra. Vui lòng thử lại sau.")
 
-# --- Main entry ---
+# --- Main ---
 if __name__ == '__main__':
     if not TOKEN:
         print("❌ ERROR: BOT_TOKEN chưa được thiết lập trong biến môi trường!")
